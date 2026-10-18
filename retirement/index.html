@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Retirement, Explained | IAFF Local 2598</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --navy:#14213D; --gold:#F2A900;
+  --bg:#FFFFFF; --panel:#EEF1F6; --line:#C9D0DC; --text:#2D3748; --head:#14213D; --muted:#5A6577;
+  --c-pen:#14213D; --c-sup:#F2A900; --c-cbiz:#3E5A8A; --c-ss:#8FA3C4; --on-dark:#FFFFFF; --cut:#C0392B;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1729; --panel:#18233B; --line:#2E3C5C; --text:#D5DCE8; --head:#FFFFFF; --muted:#9AA6BB;
+    --c-pen:#5C7BB5; --c-cbiz:#8FA8D6; --c-ss:#C9D6EE; --on-dark:#0E1729; --cut:#E06D5E;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1729; --panel:#18233B; --line:#2E3C5C; --text:#D5DCE8; --head:#FFFFFF; --muted:#9AA6BB;
+  --c-pen:#5C7BB5; --c-cbiz:#8FA8D6; --c-ss:#C9D6EE; --on-dark:#0E1729; --cut:#E06D5E;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow','Helvetica Neue',Arial,sans-serif;font-size:18px;line-height:1.55}
+a{color:var(--head);text-underline-offset:3px}
+a:focus-visible,input:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.cond{font-family:'Barlow Condensed','Arial Narrow',sans-serif}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:30px 22px 36px}
+.hero .wrap{max-width:1080px;margin:0 auto}
+.hero .local{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:18px;color:var(--gold);margin:0 0 14px}
+.hero h1{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(44px,10vw,84px);line-height:.92;margin:0 0 16px;max-width:12ch}
+.hero p{margin:0 0 10px;max-width:40ch;color:#DCE2EC;font-size:19px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:var(--navy);border-bottom:3px solid var(--gold)}
+.nav ul{list-style:none;margin:0 auto;padding:0 10px;max-width:1080px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav li{flex-shrink:0}
+.nav a{display:block;color:#fff;text-decoration:none;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:17px;padding:13px 12px}
+.nav a.on{color:var(--gold)}
+
+/* numbers panel */
+.numbers{max-width:760px;margin:28px auto 8px;padding:0 20px}
+.numbers details{background:var(--panel);border-radius:6px;border:1px solid var(--line)}
+.numbers summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.numbers summary::-webkit-details-marker{display:none}
+.numbers summary .t{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:26px;color:var(--head);line-height:1.1}
+.numbers summary .s{font-size:15px;color:var(--muted)}
+.numbers summary .chev{font-size:22px;color:var(--head);transition:transform .3s}
+.numbers details[open] .chev{transform:rotate(180deg)}
+.numbers .body{padding:4px 20px 18px}
+.ctl{margin:10px 0}
+.ctl label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-weight:600;color:var(--head);font-size:16px}
+.ctl output{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:22px;white-space:nowrap}
+.ctl .hint{font-size:14px;color:var(--muted);margin:0}
+input[type=range]{width:100%;accent-color:var(--gold);height:32px;margin:2px 0}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+button{font:inherit;font-weight:600;font-size:16px;border-radius:4px;padding:9px 14px;cursor:pointer;border:2px solid var(--head);background:transparent;color:var(--head)}
+.who{font-size:15px;color:var(--muted);margin:10px 0 0}
+
+/* chapters */
+.chapter{border-top:1px solid var(--line)}
+.ch-head{max-width:1080px;margin:0 auto;padding:44px 20px 6px}
+.ch-head .num{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:20px;color:var(--gold);margin:0}
+.ch-head h2{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(36px,7vw,56px);line-height:1;color:var(--head);margin:4px 0 6px}
+.ch-head p{margin:0;color:var(--muted);font-size:16px}
+.story{position:relative;max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr}
+.graphic{position:sticky;top:50px;height:48vh;min-height:290px;background:var(--bg);z-index:2;display:flex;align-items:center;justify-content:center;padding:8px 10px;border-bottom:1px solid var(--line)}
+.graphic svg{width:100%;height:100%;max-width:660px;overflow:visible}
+.steps{position:relative;z-index:1;padding:0 18px}
+.step{min-height:72vh;display:flex;align-items:center}
+.step:last-child{min-height:86vh}
+.card{background:var(--panel);border-left:6px solid var(--gold);border-radius:4px;padding:18px 20px;max-width:440px;margin:0 auto}
+.card h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:28px;line-height:1.05;color:var(--head);margin:0 0 8px}
+.card p{margin:0 0 10px}
+.card p:last-child{margin-bottom:0}
+.big{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:23px;color:var(--head);white-space:nowrap}
+.fine{font-size:14px;color:var(--muted)}
+@media (min-width:900px){
+  .story{grid-template-columns:420px 1fr;column-gap:40px;padding:0 24px}
+  .graphic{grid-column:2;grid-row:1;height:calc(100vh - 50px);border-bottom:none}
+  .steps{grid-column:1;grid-row:1;padding:0}
+  .card{margin:0}
+}
+
+/* svg */
+.lbl{font-family:'Barlow',sans-serif;font-size:20px;fill:var(--text)}
+.lbl-s{font-family:'Barlow',sans-serif;font-size:17px;fill:var(--muted)}
+.lbl-b{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:32px;fill:var(--head)}
+.lbl-xl{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:54px;fill:var(--head)}
+.lbl-on{font-family:'Barlow',sans-serif;font-weight:600;font-size:19px;fill:#fff}
+.tick{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;fill:var(--muted)}
+.op{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;fill:var(--gold)}
+.layer{transition:opacity .7s ease, transform .9s cubic-bezier(.2,.7,.2,1)}
+.gx{transform-box:fill-box;transform-origin:left center;transition:transform .9s cubic-bezier(.2,.7,.2,1), opacity .6s ease}
+.gy{transform-box:fill-box;transform-origin:center bottom;transition:transform .8s cubic-bezier(.2,.7,.2,1), opacity .6s ease}
+.draw{stroke-dasharray:700;stroke-dashoffset:700;transition:stroke-dashoffset 1.4s ease}
+.hide{opacity:0}
+.flat-x{transform:scaleX(0)}
+.flat-y{transform:scaleY(0)}
+.drawn{stroke-dashoffset:0}
+.mv{transform-box:view-box;transition:transform 1s cubic-bezier(.2,.7,.2,1),opacity .9s ease}
+.moved{transform:translate(-150px,0) scale(.98);opacity:0}
+.chip{font-family:'Barlow',sans-serif;font-weight:600;font-size:17px;fill:var(--head)}
+
+.foot{max-width:760px;margin:0 auto;padding:40px 20px 56px;border-top:1px solid var(--line)}
+.foot h2{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:34px;color:var(--head);margin:0 0 10px}
+.foot p{margin:0 0 12px}
+.foot ul{margin:0 0 14px;padding-left:20px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .layer,.gx,.gy,.draw{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="local">IAFF Local 2598 Retirement Guide</p>
+    <h1>Your retirement, explained</h1>
+    <p>How your pensions and benefits work, one picture at a time. Scroll, and the graphics will walk you through it.</p>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Chapters">
+  <ul>
+    <li><a href="#numbers">Your numbers</a></li>
+    <li><a href="#ch-vrs">VRS pension</a></li>
+    <li><a href="#ch-hds">The supplement</a></li>
+    <li><a href="#ch-plop">The PLOP</a></li>
+    <li><a href="#ch-cbiz">CBIZ choice</a></li>
+    <li><a href="#ch-sav">Your savings</a></li>
+    <li><a href="#ch-all">How it fits together</a></li>
+  </ul>
+</nav>
+
+<section class="numbers" id="numbers">
+  <details>
+    <summary>
+      <span><span class="t">Use your own numbers</span><br><span class="s" id="who-short">Showing our example member. Tap to enter yours.</span></span>
+      <span class="chev" aria-hidden="true">&#9662;</span>
+    </summary>
+    <div class="body">
+      <div class="ctl">
+        <label for="in-afc">Average final compensation <output id="o-afc"></output></label>
+        <input id="in-afc" type="range" min="60000" max="250000" step="1000">
+        <p class="hint">Your highest 36 months (Plan 1) or 60 months (Plan 2) of pay. myVRS shows it.</p>
+      </div>
+      <div class="ctl">
+        <label for="in-yrs">Years of service when you retire <output id="o-yrs"></output></label>
+        <input id="in-yrs" type="range" min="20" max="35" step="1">
+      </div>
+      <div class="ctl">
+        <label for="in-age">Age your VRS retirement begins <output id="o-age"></output></label>
+        <input id="in-age" type="range" min="50" max="62" step="1">
+      </div>
+      <div class="ctl">
+        <label for="in-ss">Social Security estimate at 67 <output id="o-ss"></output></label>
+        <input id="in-ss" type="range" min="500" max="4500" step="50">
+        <p class="hint">Your estimate is at ssa.gov/myaccount.</p>
+      </div>
+      <div class="ctl">
+        <label for="in-bal">457(b), Roth and 401(a) balances combined <output id="o-bal"></output></label>
+        <input id="in-bal" type="range" min="0" max="800000" step="5000">
+      </div>
+      <div class="btnrow"><button type="button" id="reset">Back to the example</button></div>
+      <p class="who">Everything you enter stays on this device. Nothing is sent to the Local or anyone else. This explainer covers members with 20 or more years of hazardous duty service, born in 1960 or later.</p>
+    </div>
+  </details>
+</section>
+
+<!-- CHAPTER 1: VRS -->
+<section class="chapter" id="ch-vrs">
+  <div class="ch-head">
+    <p class="num">Chapter 1</p>
+    <h2>How your VRS pension is figured</h2>
+    <p>Booklet page 4</p>
+  </div>
+  <div class="story">
+    <div class="graphic" aria-hidden="true"><svg id="g-vrs" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-vrs">
+      <section class="step" data-step="1"><div class="card">
+        <h3>One formula</h3>
+        <p>Your average final compensation, times your years of service, times 1.85%. That is your pension for a year, for life.</p>
+        <p><span class="big" data-v="penY"></span> a year is <span class="big" data-v="penM"></span> a month.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Every year is a slice</h3>
+        <p>Each year of service adds the same slice to your check: <span class="big" data-v="perYear"></span> a month, for the rest of your life.</p>
+        <p>One more year on the job is one more slice, forever.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Short of 25 years costs more</h3>
+        <p>Leave between 50 and 60 with fewer than 25 years and VRS cuts 0.5% for every month you are short. At 20 years, that is 30% less, for life.</p>
+        <p class="fine">Shown at your average final compensation.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Your pension</h3>
+        <p><span class="big" data-v="penFinal"></span> a month replaces about <span class="big" data-v="pct"></span> of your pay.</p>
+        <p data-v="redNote"></p>
+        <p class="fine">Your official number is in the myVRS Benefit Estimator. Survivor options and a PLOP would lower it.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 2: HDS -->
+<section class="chapter" id="ch-hds">
+  <div class="ch-head">
+    <p class="num">Chapter 2</p>
+    <h2>The Hazardous Duty Supplement</h2>
+    <p>Booklet page 5</p>
+  </div>
+  <div class="story">
+    <div class="graphic" aria-hidden="true"><svg id="g-hds" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-hds">
+      <section class="step" data-step="1"><div class="card">
+        <h3>It sits on top</h3>
+        <p>With 20 years of hazardous duty service, VRS adds a flat <span class="big">$1,488 a month</span> to your pension. Everyone who qualifies gets the same amount, whatever their salary.</p>
+        <p>For you, that is about <span class="big" data-v="hdsShare"></span> of what VRS pays.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>It is a bridge</h3>
+        <p>It starts when your VRS retirement begins, age 50 at the earliest, and carries you to full Social Security age, 67.</p>
+        <p>Starting at <span data-v="age"></span>, the bridge runs <span class="big" data-v="hdsYears"></span>, about <span class="big" data-v="hdsTotal"></span> in all.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>At 67, it hands off</h3>
+        <p>The supplement ends at 67 whether or not you have started Social Security, which is designed to pick up where it leaves off.</p>
+        <p>Claim Social Security as early as 62 and you collect both for a while, but your Social Security check stays permanently smaller.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Your handoff</h3>
+        <p data-v="handoff"></p>
+        <p class="fine">Change your Social Security estimate under <a href="#numbers">Use your own numbers</a>.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 3: PLOP -->
+<section class="chapter" id="ch-plop">
+  <div class="ch-head">
+    <p class="num">Chapter 3</p>
+    <h2>The PLOP</h2>
+    <p>Booklet page 7</p>
+  </div>
+  <div class="story">
+    <div class="graphic" aria-hidden="true"><svg id="g-plop" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-plop">
+      <section class="step" data-step="1"><div class="card">
+        <h3>Your future checks</h3>
+        <p>The Partial Lump-Sum Option Payment lets you take 1, 2 or 3 years of your pension up front. Each square here is one future monthly check of <span class="big" data-v="penBasic"></span>.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Pulled forward into one payment</h3>
+        <p data-v="plopTake"></p>
+        <p>It is not extra money. It is your own future checks, paid early.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Every check after is smaller</h3>
+        <p>To pay for it, VRS lowers your monthly pension permanently. Future cost-of-living increases are figured on the smaller check.</p>
+        <p class="fine">VRS calculates the exact reduction. See it in the myVRS Benefit Estimator before you choose.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Taxes come off the top</h3>
+        <p>Taken in cash, VRS withholds 20% for federal tax and 4% for Virginia before you see a dollar. Rolling it into an IRA or a plan that accepts rollovers avoids the up-front tax.</p>
+        <p data-v="plopCash"></p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>Do you qualify?</h3>
+        <p data-v="plopElig"></p>
+        <p class="fine">You must work at least one year past the date you first qualify for an unreduced pension: 50 with 25 years, or 60 with 5. Purchased service does not count toward that year.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 4: CBIZ -->
+<section class="chapter" id="ch-cbiz">
+  <div class="ch-head">
+    <p class="num">Chapter 4</p>
+    <h2>Your CBIZ choice</h2>
+    <p>Booklet page 8</p>
+  </div>
+  <div class="story">
+    <div class="graphic" aria-hidden="true"><svg id="g-cbiz" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-cbiz">
+      <section class="step" data-step="1"><div class="card">
+        <h3>One choice, made once</h3>
+        <p>When you retire from the County Supplemental Pension Plan, you pick one option, and you cannot change it later. Which options you have depends on your age when you leave.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Option 1: a bridge to 50</h3>
+        <p>Only for members who reach 25 years before they turn 50, which usually means hired at 24 or younger. It pays monthly until your VRS pension can begin at 50, then stops.</p>
+        <p data-v="opt1"></p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Option 2: 180 checks</h3>
+        <p data-v="opt2"></p>
+        <p>If you die before all 180 are paid, your beneficiary receives the rest.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Option 3: one lump sum</h3>
+        <p data-v="opt3"></p>
+        <p class="fine" data-v="opt3note"></p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>When the lump sum can make sense</h3>
+        <p>To catch up with Option 2, the lump sum would have to grow like a strong stock fund every year for 15 years. But you might use it to pay off a mortgage, clear credit card debt or cover a child's tuition, and the interest you stop paying can tip the math.</p>
+        <p>That is a conversation for a financial planner. The IAFF Financial Corporation is a good place to start.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 5: SAVINGS -->
+<section class="chapter" id="ch-sav">
+  <div class="ch-head">
+    <p class="num">Chapter 5</p>
+    <h2>Your 457(b), Roth 457(b) and 401(a)</h2>
+    <p>Booklet page 9</p>
+  </div>
+  <div class="story">
+    <div class="graphic" aria-hidden="true"><svg id="g-sav" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-sav">
+      <section class="step" data-step="1"><div class="card">
+        <h3>Accounts, not pensions</h3>
+        <p>What you get depends on what goes in, how it grows and how you draw it out. Your 457(b) and Roth 457(b) hold what you save. Your 401(a) holds the County's contributions.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Tax now or tax later</h3>
+        <p>The 457(b) gives you a tax break today, and you pay tax when you withdraw. The Roth 457(b) is taxed today, and comes out tax-free later.</p>
+        <p>Roth works best when your tax rate now is lower than it will be later, which is often true early in your career.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>When you can reach it</h3>
+        <p>Your 457(b) is open at any age once you leave the County, with no 10% penalty. Your 401(a) opens without the penalty if you leave in or after the year you turn 50, or with 25 years. Roth earnings come out tax-free at 59½ once the account is 5 years old.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Two pockets</h3>
+        <p>That is why many members use both: 457(b) money to live on from the day you leave until 59½, and Roth money that comes out tax-free after. It matters most if you retire young.</p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>Your balance as a paycheck</h3>
+        <p data-v="savPay"></p>
+        <p class="fine">Simple division, before growth or taxes. Move these accounts into an IRA and you lose the early-withdrawal protection: before 59½, IRA withdrawals generally face the 10% penalty.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 3: ALL -->
+<section class="chapter" id="ch-all">
+  <div class="ch-head">
+    <p class="num">Chapter 6</p>
+    <h2>How it all fits together</h2>
+    <p>Booklet page 12</p>
+  </div>
+  <div class="story">
+    <div class="graphic" aria-hidden="true"><svg id="g-all" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-all">
+      <section class="step" data-step="1"><div class="card">
+        <h3>Your monthly income, by age</h3>
+        <p>Start with the foundation: your VRS pension, <span class="big" data-v="penFinal"></span> a month, from <span data-v="age"></span> for the rest of your life.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Add the supplement</h3>
+        <p>The <span class="big">$1,488</span> bridge stacks on top until 67.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Add CBIZ Option 2</h3>
+        <p data-v="cbizText"></p>
+        <p class="fine">Option 2 pays for 15 years. Chapter 4 compares it with the lump sum.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Social Security takes over</h3>
+        <p>At 67, Social Security picks up: <span class="big" data-v="ssM"></span> a month on your estimate.</p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>Your retirement at a glance</h3>
+        <p data-v="summary"></p>
+        <p class="fine">Before taxes and health premiums, without cost-of-living increases or your 457(b) and 401(a) savings, which can smooth any change.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <h2>Where to get your real numbers</h2>
+  <ul>
+    <li>VRS pension and supplement: <a href="https://myvrs.varetire.org">myVRS Benefit Estimator</a></li>
+    <li>457(b), Roth 457(b) and 401(a): <a href="https://participant.empower-retirement.com/participant/#/login">Empower</a> or 1-800-701-8255</li>
+    <li>CBIZ Supplemental Plan: <a href="https://myretirement.cbiz.com">myretirement.cbiz.com</a> or 1-844-581-2871</li>
+    <li>Payout options and the PLOP: <a href="https://www.varetire.org/benefits-and-programs/benefits/benefit-payout-options/">VRS payout options</a></li>
+    <li>Social Security: <a href="https://www.ssa.gov/myaccount">ssa.gov/myaccount</a></li>
+    <li>Questions: eboard@Local2598.org</li>
+  </ul>
+  <p class="fine">General information from IAFF Local 2598, not financial, legal or tax advice. Your official benefits are set by VRS, the Prince William County Supplemental Pension Plan and your Empower plan documents. Supplement amount as of July 1, 2025. CBIZ Option 2 is $940 a month under the 2025 Restatement. Early retirement reduction shown as 0.5% per month short of 25 years between ages 50 and 60. Published October 2026.</p>
+</footer>
+
+<script>
+(function(){
+var NS='http://www.w3.org/2000/svg';
+var EX={afc:150000,yrs:25,age:52,ss:2500,bal:250000};
+var N=Object.assign({},EX);
+try{var saved=JSON.parse(localStorage.getItem('l2598-numbers')||'null'); if(saved&&saved.afc){N=Object.assign(N,saved);} if(typeof N.bal!=='number')N.bal=EX.bal;}catch(e){}
+
+var $=function(id){return document.getElementById(id);};
+var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+var art=function(n){var t=String(n);return (t[0]==='8'||t==='11'||t==='18'||/^8/.test(t))?'an':'a';};
+
+/* ---------- model ---------- */
+function model(){
+  var afc=N.afc, yrs=N.yrs, age=N.age;
+  var penYfull=afc*yrs*0.0185;
+  var short=(yrs<25 && age<60)?Math.min((25-yrs)*12,60):0;
+  var red=short*0.005;
+  var penY=penYfull*(1-red), penM=penY/12;
+  var hds=1488;
+  var hdsYears=Math.max(0,67-age);
+  var cbiz=0;
+  if(yrs>=25||age>=55){cbiz=940;} else {cbiz=940*0.5*(yrs/25);}
+  var cbizEnd=age+15;
+  // PLOP eligibility
+  var unredAge=null;
+  if(yrs>=25){ unredAge=Math.max(50, age-(yrs-25)); } else if(age>=60){ unredAge=60; }
+  var monthsPast = unredAge===null?0:Math.max(0,(age-unredAge)*12);
+  var plopMax = Math.min(3, Math.floor(monthsPast/12));
+  return {unredAge:unredAge,monthsPast:monthsPast,plopMax:plopMax,bal:N.bal,afc:afc,yrs:yrs,age:age,ss:N.ss,penYfull:penYfull,red:red,penY:penY,penM:penM,hds:hds,hdsYears:hdsYears,cbiz:cbiz,cbizEnd:cbizEnd,perYear:afc*0.0185/12};
+}
+
+/* ---------- helpers ---------- */
+function el(tag,attrs,text){var e=document.createElementNS(NS,tag);for(var k in attrs){e.setAttribute(k,attrs[k]);}if(text!==undefined)e.textContent=text;return e;}
+function clear(svg){while(svg.firstChild)svg.removeChild(svg.firstChild);}
+
+/* ---------- chapter 1: VRS ---------- */
+function drawVRS(m){
+  var s=$('g-vrs'); clear(s);
+  // step 1: formula
+  var f=el('g',{'class':'layer','data-show':'1'});
+  var cols=[[105,fmt(m.afc),'AFC'],[262,String(m.yrs),'years'],[392,'1.85%','multiplier']];
+  cols.forEach(function(c){ f.appendChild(el('text',{'class':'lbl-b','x':c[0],'y':150,'text-anchor':'middle'},c[1])); f.appendChild(el('text',{'class':'lbl-s','x':c[0],'y':176,'text-anchor':'middle'},c[2])); });
+  f.appendChild(el('text',{'class':'op','x':205,'y':152,'text-anchor':'middle'},'×'));
+  f.appendChild(el('text',{'class':'op','x':322,'y':152,'text-anchor':'middle'},'×'));
+  f.appendChild(el('text',{'class':'op','x':468,'y':152,'text-anchor':'middle'},'='));
+  f.appendChild(el('text',{'class':'lbl-b','x':560,'y':150,'text-anchor':'middle'},fmt(m.penYfull)));
+  f.appendChild(el('text',{'class':'lbl-s','x':560,'y':176,'text-anchor':'middle'},'a year'));
+  f.appendChild(el('rect',{'x':60,'y':222,'width':520,'height':3,'fill':'var(--gold)'}));
+  f.appendChild(el('text',{'class':'lbl-xl','x':320,'y':292,'text-anchor':'middle'},fmt(m.penYfull/12)));
+  f.appendChild(el('text',{'class':'lbl','x':320,'y':322,'text-anchor':'middle'},'a month, for life'));
+  s.appendChild(f);
+  // step 2: slices
+  var g=el('g',{'class':'layer','data-show':'2'});
+  var n=m.yrs, tw=520*(n/35), w=tw/n, x0=60;
+  for(var i=0;i<n;i++){
+    var r=el('rect',{'class':'gy flat-y','x':x0+i*w,'y':150,'width':Math.max(1,w-2),'height':80,'fill':i%2?'var(--c-pen)':'var(--c-cbiz)'});
+    r.style.transitionDelay=(i*40)+'ms';
+    g.appendChild(r);
+  }
+  g.appendChild(el('rect',{'x':x0,'y':150,'width':520,'height':80,'fill':'none','stroke':'var(--line)','stroke-width':1.5,'stroke-dasharray':'4 4'}));
+  g.appendChild(el('text',{'class':'lbl-b','x':x0,'y':130},fmt(m.penYfull/12)+' a month'));
+  g.appendChild(el('text',{'class':'lbl-s','x':x0,'y':258},'1 year'));
+  g.appendChild(el('text',{'class':'lbl-s','x':x0+tw,'y':258,'text-anchor':'end'},n+' years'));
+  g.appendChild(el('text',{'class':'lbl-s','x':580,'y':258,'text-anchor':'end'},n<34?'35':''));
+  g.appendChild(el('text',{'class':'lbl','x':320,'y':310,'text-anchor':'middle'},'Each slice: '+fmt(m.perYear)+' a month, for life'));
+  s.appendChild(g);
+  // step 3: reduction bars
+  var c3=el('g',{'class':'layer','data-show':'3'});
+  var rows=[[20,0.30],[22,0.18],[25,0]];
+  var maxFull=m.afc*25*0.0185/12, bw=380;
+  rows.forEach(function(rw,i){
+    var full=m.afc*rw[0]*0.0185/12, after=full*(1-rw[1]), y=70+i*90;
+    var fw=bw*full/maxFull, aw=bw*after/maxFull;
+    c3.appendChild(el('text',{'class':'lbl','x':20,'y':y+26},rw[0]+' years'));
+    c3.appendChild(el('rect',{'x':130,'y':y,'width':fw,'height':40,'rx':3,'fill':'none','stroke':'var(--cut)','stroke-width':2,'stroke-dasharray':'6 4'}));
+    var b=el('rect',{'class':'gx flat-x','x':130,'y':y,'width':aw,'height':40,'rx':3,'fill':'var(--c-pen)'}); b.style.transitionDelay=(i*150)+'ms';
+    c3.appendChild(b);
+    c3.appendChild(el('text',{'class':'lbl-b','x':130+fw+10,'y':y+31},fmt(after)));
+    if(rw[1]>0) c3.appendChild(el('text',{'class':'lbl-s','x':130+fw+10,'y':y+56},Math.round(rw[1]*100)+'% less, for life'));
+  });
+  c3.appendChild(el('text',{'class':'lbl-s','x':20,'y':350},'Leaving between 50 and 60. Dashed outline: the full amount.'));
+  s.appendChild(c3);
+  // step 4: share of pay
+  var d=el('g',{'class':'layer','data-show':'4'});
+  var pay=m.afc/12, pw=520*Math.min(1,m.penM/pay);
+  d.appendChild(el('text',{'class':'lbl','x':60,'y':110},'Your monthly pay: '+fmt(pay)));
+  d.appendChild(el('rect',{'x':60,'y':125,'width':520,'height':56,'rx':4,'fill':'none','stroke':'var(--line)','stroke-width':2}));
+  d.appendChild(el('rect',{'class':'gx flat-x','x':60,'y':125,'width':pw,'height':56,'rx':4,'fill':'var(--c-pen)'}));
+  d.appendChild(el('text',{'class':'lbl-xl','x':60,'y':260},fmt(m.penM)));
+  d.appendChild(el('text',{'class':'lbl','x':60,'y':292},'a month, about '+Math.round(m.penM/pay*100)+'% of your pay'));
+  if(m.red>0) d.appendChild(el('text',{'class':'lbl-s','x':60,'y':322},'Includes '+art(Math.round(m.red*100))+' '+Math.round(m.red*100)+'% early retirement reduction'));
+  s.appendChild(d);
+}
+
+/* ---------- chapter 2: HDS ---------- */
+function drawHDS(m){
+  var s=$('g-hds'); clear(s);
+  // step 1: stack
+  var st=el('g',{'class':'layer','data-show':'1'});
+  var tot=m.penM+m.hds, sc=250/Math.max(tot,7000), ph=m.penM*sc, hh=m.hds*sc, base=340;
+  st.appendChild(el('rect',{'x':190,'y':base-ph,'width':140,'height':ph,'rx':3,'fill':'var(--c-pen)'}));
+  st.appendChild(el('text',{'class':'lbl-on','x':260,'y':base-ph/2+7,'text-anchor':'middle'},'VRS pension'));
+  var hs=el('rect',{'class':'gy flat-y','x':190,'y':base-ph-hh-2,'width':140,'height':hh,'rx':3,'fill':'var(--c-sup)'});
+  st.appendChild(hs);
+  st.appendChild(el('text',{'class':'lbl-b','x':350,'y':base-ph/2+4},fmt(m.penM)));
+  st.appendChild(el('text',{'class':'lbl','x':350,'y':base-ph/2+30},'pension, for life'));
+  st.appendChild(el('text',{'class':'lbl-b','x':350,'y':base-ph-hh/2+4},'+ $1,488'));
+  st.appendChild(el('text',{'class':'lbl','x':350,'y':base-ph-hh/2+30},'supplement'));
+  st.appendChild(el('text',{'class':'lbl-b','x':260,'y':base-ph-hh-18,'text-anchor':'middle'},fmt(tot)+' a month'));
+  st.appendChild(el('line',{'x1':150,'y1':base,'x2':370,'y2':base,'stroke':'var(--line)','stroke-width':2}));
+  s.appendChild(st);
+  // timeline
+  var X=function(a){return 100+(a-50)*20;}, x0=X(m.age), x67=X(67);
+  var tl=el('g',{'class':'layer','data-show':'2 3 4'});
+  tl.appendChild(el('line',{'x1':x67,'y1':40,'x2':x67,'y2':300,'stroke':'var(--gold)','stroke-width':3,'stroke-dasharray':'6 6'}));
+  tl.appendChild(el('text',{'class':'lbl-b','x':x67,'y':30,'text-anchor':'middle'},'67'));
+  tl.appendChild(el('rect',{'class':'gx flat-x','data-grow':'2 3 4','x':x0,'y':62,'width':620-x0,'height':38,'rx':3,'fill':'var(--c-pen)'}));
+  tl.appendChild(el('text',{'class':'lbl-on','x':x0+10,'y':88},'VRS pension, for life'));
+  tl.appendChild(el('path',{'class':'draw','data-draw':'2 3 4','d':'M'+x0+' 158 Q'+((x0+x67)/2)+' 98 '+x67+' 158','fill':'none','stroke':'var(--gold)','stroke-width':4}));
+  tl.appendChild(el('rect',{'class':'gx flat-x','data-grow':'2 3 4','x':x0,'y':140,'width':x67-x0,'height':38,'rx':3,'fill':'var(--c-cbiz)'}));
+  tl.appendChild(el('text',{'class':'lbl-on','x':x0+10,'y':166},'$1,488 supplement'));
+  var ssg=el('g',{'class':'layer','data-show':'3 4'});
+  ssg.appendChild(el('rect',{'x':x67,'y':220,'width':620-x67,'height':38,'rx':3,'fill':'none','stroke':'var(--c-ss)','stroke-width':2.5,'stroke-dasharray':'7 5'}));
+  ssg.appendChild(el('text',{'class':'lbl','x':x67-14,'y':246,'text-anchor':'end','style':'font-weight:600;font-size:18px'},fmt(m.ss)+' Social Security'));
+  ssg.appendChild(el('path',{'d':'M'+(x67-8)+' 180 C '+(x67-8)+' 200, '+(x67+6)+' 200, '+(x67+6)+' 214','fill':'none','stroke':'var(--gold)','stroke-width':3}));
+  ssg.appendChild(el('path',{'d':'M'+(x67)+' 210 L'+(x67+6)+' 220 L'+(x67+12)+' 210 Z','fill':'var(--gold)'}));
+  tl.appendChild(ssg);
+  tl.appendChild(el('line',{'x1':100,'y1':300,'x2':620,'y2':300,'stroke':'var(--line)','stroke-width':2}));
+  [50,55,60,65,67,70,75].forEach(function(a){tl.appendChild(el('text',{'class':'tick','x':X(a),'y':326,'text-anchor':'middle'},a));});
+  s.appendChild(tl);
+}
+
+/* ---------- chapter 3: ALL (stacked area) ---------- */
+function drawALL(m){
+  var s=$('g-all'); clear(s);
+  var a0=m.age, a1=85, L=70, R=620, T=40, B=300;
+  var X=function(a){return L+(a-a0)*(R-L)/(a1-a0);};
+  function vals(a){ return [m.penM, (a<67)?m.hds:0, (a<m.cbizEnd)?m.cbiz:0, (a>=67)?m.ss:0]; }
+  var maxT=0; for(var a=a0;a<a1;a++){var v=vals(a);maxT=Math.max(maxT,v[0]+v[1]+v[2]+v[3]);}
+  maxT=Math.ceil(maxT/1000)*1000+500;
+  var Y=function(v){return B-(v/maxT)*(B-T);};
+  // grid
+  var gr=el('g',{});
+  for(var t=0;t<=maxT;t+=2000){ gr.appendChild(el('line',{'x1':L,'y1':Y(t),'x2':R,'y2':Y(t),'stroke':'var(--line)','stroke-width':1})); gr.appendChild(el('text',{'class':'tick','x':L-8,'y':Y(t)+6,'text-anchor':'end','style':'font-size:16px'},'$'+(t/1000)+'k')); }
+  s.appendChild(gr);
+  var colors=['var(--c-pen)','var(--c-sup)','var(--c-cbiz)','var(--c-ss)'];
+  var shows=['1 2 3 4 5','2 3 4 5','3 4 5','4 5'];
+  for(var k=0;k<4;k++){
+    var top=[],bot=[];
+    for(var a=a0;a<a1;a++){
+      var v=vals(a), lo=0; for(var j=0;j<k;j++)lo+=v[j]; var hi=lo+v[k];
+      top.push([X(a),Y(hi)],[X(a+1),Y(hi)]); bot.push([X(a),Y(lo)],[X(a+1),Y(lo)]);
+    }
+    var pts=top.concat(bot.reverse()).map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1);}).join(' ');
+    var poly=el('polygon',{'class':'layer','data-show':shows[k],'points':pts,'fill':colors[k]});
+    s.appendChild(poly);
+  }
+  // axis
+  var ax=el('g',{});
+  ax.appendChild(el('line',{'x1':L,'y1':B,'x2':R,'y2':B,'stroke':'var(--line)','stroke-width':2}));
+  var ticks=[a0,67,75,85]; if(Math.abs(m.cbizEnd-67)>=3 && m.cbizEnd<85 && Math.abs(m.cbizEnd-75)>=3) ticks.push(m.cbizEnd);
+  ticks.forEach(function(a){ax.appendChild(el('text',{'class':'tick','x':X(a),'y':324,'text-anchor':'middle'},a));});
+  ax.appendChild(el('text',{'class':'lbl-s','x':(L+R)/2,'y':352,'text-anchor':'middle'},'Age'));
+  s.appendChild(ax);
+  // legend chips
+  var lg=el('g',{});
+  var names=[['VRS pension','1 2 3 4 5'],['Supplement','2 3 4 5'],['CBIZ Option 2','3 4 5'],['Social Security','4 5']];
+  names.forEach(function(nm,i){var gx=el('g',{'class':'layer','data-show':nm[1]}); gx.appendChild(el('rect',{'x':L+i*140,'y':6,'width':16,'height':16,'fill':colors[i],'rx':2})); gx.appendChild(el('text',{'class':'lbl-s','x':L+i*140+22,'y':20,'style':'font-size:15px'},nm[0])); lg.appendChild(gx);});
+  s.appendChild(lg);
+  // totals markers (step 5)
+  var mk=el('g',{'class':'layer','data-show':'5'});
+  var pts=[a0]; if(67>a0) pts.push(67); if(m.cbizEnd>67 && m.cbizEnd<a1) pts.push(m.cbizEnd);
+  pts.forEach(function(a,i){var v=vals(a),tt=v[0]+v[1]+v[2]+v[3];
+    var below=(i===2);
+    mk.appendChild(el('circle',{'cx':X(a)+6,'cy':Y(tt),'r':6,'fill':'var(--head)'}));
+    var lt=el('text',{'class':'lbl-b','x':X(a)+14,'y':below?Y(tt)+30:Y(tt)-10,'style':'font-size:24px'},fmt(tt));
+    mk.appendChild(lt);
+  });
+  s.appendChild(mk);
+}
+
+
+/* ---------- chapter 3: PLOP ---------- */
+function drawPLOP(m){
+  var s=$('g-plop'); clear(s);
+  var k=m.plopMax>0?m.plopMax:2, basic=m.penYfull/12, lump=basic*12*k;
+  // checks grid: 3 rows x 12
+  var gx0=180, gy0=70, cw=32, ch=26;
+  var grid=el('g',{'class':'layer','data-show':'1 2'});
+  for(var r=0;r<3;r++){ for(var c=0;c<12;c++){
+    var idx=r*12+c, inLump=r<k;
+    var rect=el('rect',{'class':inLump?'mv':'', 'data-move':inLump?'2':'', 'x':gx0+c*cw,'y':gy0+r*(ch+10),'width':cw-5,'height':ch,'rx':3,'fill':inLump?'var(--gold)':'var(--c-pen)'});
+    if(inLump) rect.style.transitionDelay=(idx*12)+'ms';
+    grid.appendChild(rect);
+  }}
+  grid.appendChild(el('text',{'class':'lbl-s','x':gx0,'y':58},'Each square: one month, '+fmt(basic)));
+  ['Year 1','Year 2','Year 3'].forEach(function(t,i){ grid.appendChild(el('text',{'class':'lbl-s mv','data-move':'2','x':gx0-14,'y':gy0+18+i*36,'text-anchor':'end'},t)); });
+  s.appendChild(grid);
+  var lp=el('g',{'class':'layer','data-show':'2'});
+  var lh=Math.min(170, 56*k);
+  lp.appendChild(el('rect',{'class':'gy flat-y','x':40,'y':300-lh,'width':110,'height':lh,'rx':4,'fill':'var(--gold)'}));
+  lp.appendChild(el('text',{'class':'lbl-b','x':95,'y':300-lh-14,'text-anchor':'middle'},fmt(lump)));
+  lp.appendChild(el('text',{'class':'lbl-s','x':95,'y':326,'text-anchor':'middle'},k+'-year PLOP'));
+  s.appendChild(lp);
+  // step 3: thinner checks
+  var th=el('g',{'class':'layer','data-show':'3'});
+  th.appendChild(el('text',{'class':'lbl','x':60,'y':110},'Monthly pension without a PLOP'));
+  th.appendChild(el('rect',{'x':60,'y':122,'width':520,'height':50,'rx':4,'fill':'var(--c-pen)'}));
+  th.appendChild(el('text',{'class':'lbl','x':60,'y':222},'With a PLOP: smaller, for life'));
+  th.appendChild(el('rect',{'x':60,'y':234,'width':520,'height':50,'rx':4,'fill':'none','stroke':'var(--cut)','stroke-width':2,'stroke-dasharray':'6 4'}));
+  th.appendChild(el('rect',{'class':'gx flat-x','x':60,'y':234,'width':440,'height':50,'rx':4,'fill':'var(--c-pen)'}));
+  th.appendChild(el('text',{'class':'lbl-s','x':580,'y':312,'text-anchor':'end'},'VRS calculates the exact reduction'));
+  s.appendChild(th);
+  // shrink effect: use a second rect with scaleX less than 1 via inline style when visible
+  // step 4: withholding
+  var wh=el('g',{'class':'layer','data-show':'4'});
+  var fed=lump*0.20, va=lump*0.04, cash=lump-fed-va, W=520, x=60;
+  [[cash,'var(--c-pen)','Cash to you'],[fed,'var(--cut)','20% federal'],[va,'var(--gold)','4% Virginia']].forEach(function(seg,i){
+    var w=W*seg[0]/lump;
+    var r=el('rect',{'class':'gx flat-x','x':x,'y':150,'width':w,'height':60,'fill':seg[1]}); r.style.transitionDelay=(i*250)+'ms';
+    wh.appendChild(r);
+    wh.appendChild(el('text',{'class':i===0?'lbl-b':'lbl-s','x':i===0?x:x+w,'y':i===0?138:(i===1?240:268),'text-anchor':i===0?'start':'end','style':i===0?'font-size:28px':''},(i===0?fmt(seg[0]):fmt(seg[0])+' '+seg[2])));
+    x+=w;
+  });
+  wh.appendChild(el('text',{'class':'lbl-s','x':60,'y':240},'Cash to you'));
+  wh.appendChild(el('text',{'class':'lbl','x':60,'y':330},fmt(lump)+' '+k+'-year PLOP, taken in cash'));
+  s.appendChild(wh);
+  // step 5: eligibility timeline
+  var el5=el('g',{'class':'layer','data-show':'5'});
+  var lo=Math.min(48, m.age-2), hi=Math.max(62, m.age+2);
+  var X=function(a){return 60+(a-lo)*(520/(hi-lo));};
+  el5.appendChild(el('line',{'x1':60,'y1':250,'x2':580,'y2':250,'stroke':'var(--line)','stroke-width':2}));
+  for(var a=lo;a<=hi;a+=2){ el5.appendChild(el('text',{'class':'tick','x':X(a),'y':276,'text-anchor':'middle'},a)); }
+  if(m.unredAge!==null){
+    el5.appendChild(el('rect',{'class':'gx flat-x','x':X(m.unredAge),'y':170,'width':Math.max(4,X(m.unredAge+1)-X(m.unredAge)),'height':40,'fill':'var(--c-cbiz)'}));
+    el5.appendChild(el('text',{'class':'lbl-s','x':X(m.unredAge),'y':160},'Unreduced at '+m.unredAge+', plus 1 year'));
+  } else {
+    el5.appendChild(el('text',{'class':'lbl-s','x':60,'y':160},'At these numbers you would not reach an unreduced pension.'));
+  }
+  el5.appendChild(el('line',{'x1':X(m.age),'y1':110,'x2':X(m.age),'y2':250,'stroke':'var(--gold)','stroke-width':3,'stroke-dasharray':'6 6'}));
+  el5.appendChild(el('text',{'class':'lbl-b','x':X(m.age),'y':98,'text-anchor':'middle','style':'font-size:24px'},'You retire at '+m.age));
+  el5.appendChild(el('text',{'class':'lbl-b','x':320,'y':330,'text-anchor':'middle'},m.plopMax>0?('Up to a '+m.plopMax+'-year PLOP'):'Not eligible for a PLOP yet'));
+  s.appendChild(el5);
+}
+
+/* ---------- chapter 4: CBIZ ---------- */
+function drawCBIZ(m){
+  var s=$('g-cbiz'); clear(s);
+  // step 1: three cards
+  var c1=el('g',{'class':'layer','data-show':'1'});
+  var opt1ok=false; // our members' VRS retirement begins at 50 or later in this explainer
+  [['Option 1','Bridge to 50',opt1ok],['Option 2','180 monthly checks',true],['Option 3','One lump sum',true]].forEach(function(o,i){
+    var x=40+i*195;
+    var r=el('rect',{'class':'gy flat-y','x':x,'y':110,'width':175,'height':170,'rx':6,'fill':o[2]?'var(--c-pen)':'none','stroke':'var(--c-pen)','stroke-width':2,'stroke-dasharray':o[2]?'':'6 5'}); r.style.transitionDelay=(i*150)+'ms';
+    c1.appendChild(r);
+    c1.appendChild(el('text',{'class':'lbl-b','x':x+87,'y':185,'text-anchor':'middle','style':'fill:'+(o[2]?'#fff':'var(--head)')},o[0]));
+    c1.appendChild(el('text',{'class':'lbl-s','x':x+87,'y':215,'text-anchor':'middle','style':'fill:'+(o[2]?'#DCE2EC':'var(--muted)')},o[1]));
+    if(!o[2]) c1.appendChild(el('text',{'class':'lbl-s','x':x+87,'y':305,'text-anchor':'middle'},'Leaving before 50 only'));
+  });
+  s.appendChild(c1);
+  // step 2: option 1 bridge
+  var o1=el('g',{'class':'layer','data-show':'2'});
+  var X=function(a){return 60+(a-44)*(520/14);};
+  var o1m=m.afc*0.015*25/12;
+  o1.appendChild(el('rect',{'class':'gx flat-x','x':X(47),'y':120,'width':X(50)-X(47),'height':46,'rx':3,'fill':'var(--gold)'}));
+  o1.appendChild(el('text',{'class':'lbl-b','x':X(47),'y':108,'style':'font-size:26px'},fmt(o1m)+' a month'));
+  o1.appendChild(el('text',{'class':'lbl-s','x':X(47),'y':188},'CBIZ Option 1, 47 to 50'));
+  o1.appendChild(el('rect',{'class':'gx flat-x','x':X(50),'y':210,'width':X(58)-X(50),'height':46,'rx':3,'fill':'var(--c-pen)'}));
+  o1.appendChild(el('text',{'class':'lbl-on','x':X(50)+10,'y':240},'VRS pension from 50'));
+  o1.appendChild(el('line',{'x1':60,'y1':290,'x2':580,'y2':290,'stroke':'var(--line)','stroke-width':2}));
+  [44,47,50,54,58].forEach(function(a){o1.appendChild(el('text',{'class':'tick','x':X(a),'y':316,'text-anchor':'middle'},a));});
+  o1.appendChild(el('text',{'class':'lbl-s','x':60,'y':350},'Example: hired at 22, leaves at 47 with 25 years'));
+  s.appendChild(o1);
+  // step 3: 180 checks
+  var o2=el('g',{'class':'layer','data-show':'3 4'});
+  var cw=34, chh=15;
+  for(var r=0;r<15;r++){ for(var c=0;c<12;c++){
+    var rr=el('rect',{'class':'mv','data-move':'4','x':120+c*cw,'y':40+r*(chh+4),'width':cw-5,'height':chh,'rx':2,'fill':'var(--c-cbiz)'});
+    rr.style.transitionDelay=((r*12+c)*4)+'ms';
+    o2.appendChild(rr);
+  }}
+  o2.appendChild(el('text',{'class':'lbl-s mv','data-move':'4','x':110,'y':58,'text-anchor':'end'},'Year 1'));
+  o2.appendChild(el('text',{'class':'lbl-s mv','data-move':'4','x':110,'y':40+14*19+12,'text-anchor':'end'},'Year 15'));
+  s.appendChild(o2);
+  // step 4: lump vs monthly
+  var o3=el('g',{'class':'layer','data-show':'4 5'});
+  var lump=(m.cbiz>=940?104291:104291*m.cbiz/940), per=lump/180;
+  o3.appendChild(el('text',{'class':'lbl','x':60,'y':96},'Option 2'));
+  o3.appendChild(el('rect',{'class':'gx flat-x','x':60,'y':108,'width':520,'height':50,'rx':4,'fill':'var(--c-cbiz)'}));
+  o3.appendChild(el('text',{'class':'lbl-b','x':580,'y':96,'text-anchor':'end'},fmt(m.cbiz)+' a month'));
+  o3.appendChild(el('text',{'class':'lbl','x':60,'y':216},'Option 3, '+fmt(lump)+' spread over 15 years'));
+  o3.appendChild(el('rect',{'class':'gx flat-x','x':60,'y':228,'width':520*per/m.cbiz,'height':50,'rx':4,'fill':'var(--gold)'}));
+  o3.appendChild(el('text',{'class':'lbl-b','x':60+520*per/m.cbiz+12,'y':264},fmt(per)+' a month'));
+  o3.appendChild(el('text',{'class':'lbl-s','x':60,'y':320},'Same 15 years, same unit. Before any investment growth.'));
+  s.appendChild(o3);
+}
+
+/* ---------- chapter 5: SAVINGS ---------- */
+function drawSAV(m){
+  var s=$('g-sav'); clear(s);
+  var cols=[['457(b)','Your money','Tax break now','var(--c-pen)'],['Roth 457(b)','Your money','Tax-free later','var(--gold)'],['401(a)',"County's money",'Tax break now','var(--c-cbiz)']];
+  // step 1-2: jars
+  var j=el('g',{'class':'layer','data-show':'1 2'});
+  cols.forEach(function(c,i){
+    var x=50+i*195;
+    var r=el('rect',{'class':'gy flat-y','data-grow':'1 2','x':x,'y':120,'width':170,'height':170,'rx':10,'fill':c[3]}); r.style.transitionDelay=(i*150)+'ms';
+    j.appendChild(r);
+    j.appendChild(el('text',{'class':'lbl-b','x':x+85,'y':105,'text-anchor':'middle','style':'font-size:28px'},c[0]));
+    j.appendChild(el('text',{'class':'lbl-on','x':x+85,'y':215,'text-anchor':'middle','fill':'#fff','style':i===1?'fill:#14213D':'fill:#FFFFFF'},c[1]));
+    var t=el('g',{'class':'layer','data-show':'2'});
+    t.appendChild(el('text',{'class':'chip','x':x+85,'y':322,'text-anchor':'middle'},c[2]));
+    j.appendChild(t);
+  });
+  s.appendChild(j);
+  // step 3-4: access timeline
+  var tl=el('g',{'class':'layer','data-show':'3 4'});
+  var lo=45, hi=70, X=function(a){return 170+(a-lo)*(440/(hi-lo));};
+  var leave=m.age, a401=(m.yrs>=25)?leave:Math.max(50,leave);
+  var rows=[['457(b)',leave,'var(--c-pen)','Any age once you leave'],['401(a)',a401,'var(--c-cbiz)','From 50, or with 25 years'],['Roth earnings',59.5,'var(--gold)','Tax-free at 59½']];
+  rows.forEach(function(rw,i){
+    var y=70+i*70;
+    tl.appendChild(el('text',{'class':'lbl','x':160,'y':y+27,'text-anchor':'end','style':'font-weight:600'},rw[0]));
+    tl.appendChild(el('rect',{'x':170,'y':y,'width':440,'height':40,'rx':3,'fill':'none','stroke':'var(--line)','stroke-width':1.5}));
+    var b=el('rect',{'class':'gx flat-x','data-grow':'3 4','x':X(rw[1]),'y':y,'width':610-X(rw[1]),'height':40,'rx':3,'fill':rw[2]}); b.style.transitionDelay=(i*200)+'ms';
+    tl.appendChild(b);
+    tl.appendChild(el('text',{'class':'lbl-s','x':X(rw[1])+8,'y':y+60,'style':'font-size:15px'},rw[3]));
+  });
+  tl.appendChild(el('line',{'x1':X(leave),'y1':52,'x2':X(leave),'y2':290,'stroke':'var(--gold)','stroke-width':2.5,'stroke-dasharray':'5 5'}));
+  tl.appendChild(el('text',{'class':'lbl-s','x':X(leave),'y':44,'text-anchor':'middle'},'You leave at '+leave));
+  [45,50,55,60,65,70].forEach(function(a){tl.appendChild(el('text',{'class':'tick','x':X(a),'y':318,'text-anchor':'middle'},a));});
+  var pk=el('g',{'class':'layer','data-show':'4'});
+  pk.appendChild(el('rect',{'x':X(leave),'y':330,'width':X(59.5)-X(leave),'height':16,'fill':'var(--c-pen)'}));
+  pk.appendChild(el('rect',{'x':X(59.5),'y':330,'width':610-X(59.5),'height':16,'fill':'var(--gold)'}));
+  pk.appendChild(el('text',{'class':'lbl-s','x':X(leave),'y':368,'style':'font-size:15px'},'Live on 457(b)'));
+  pk.appendChild(el('text',{'class':'lbl-s','x':X(59.5)+4,'y':368,'style':'font-size:15px'},'Then Roth, tax-free'));
+  tl.appendChild(pk);
+  s.appendChild(tl);
+  // step 5: paycheck
+  var pc=el('g',{'class':'layer','data-show':'5'});
+  var yrs=Math.max(1,67-m.age), to67=m.bal/(yrs*12), over30=m.bal/360, gap=Math.max(0,m.hds-m.ss);
+  var mx=Math.max(to67,over30,m.hds,1), W=470;
+  [[to67,'Spread from '+m.age+' to 67','var(--c-cbiz)'],[over30,'Spread over 30 years','var(--c-pen)']].forEach(function(r,i){
+    var y=80+i*95;
+    pc.appendChild(el('text',{'class':'lbl','x':60,'y':y-10},r[1]));
+    pc.appendChild(el('rect',{'class':'gx flat-x','x':60,'y':y,'width':Math.max(3,W*r[0]/mx),'height':46,'rx':3,'fill':r[2]}));
+    pc.appendChild(el('text',{'class':'lbl-b','x':60+Math.max(3,W*r[0]/mx)+10,'y':y+34,'style':'font-size:28px'},fmt(r[0])));
+  });
+  pc.appendChild(el('line',{'x1':60+W*m.hds/mx,'y1':60,'x2':60+W*m.hds/mx,'y2':240,'stroke':'var(--gold)','stroke-width':3,'stroke-dasharray':'6 6'}));
+  pc.appendChild(el('text',{'class':'lbl-s','x':60+W*m.hds/mx,'y':262,'text-anchor':'middle'},'$1,488 supplement'));
+  pc.appendChild(el('text',{'class':'lbl','x':60,'y':320},'Monthly, from a '+fmt(m.bal)+' combined balance'));
+  s.appendChild(pc);
+}
+
+/* ---------- text bindings ---------- */
+function bind(m){
+  var set=function(k,v,html){[].forEach.call(document.querySelectorAll('[data-v="'+k+'"]'),function(e){ if(html)e.innerHTML=v; else e.textContent=v; });};
+  set('penY',fmt(m.penYfull)); set('penM',fmt(m.penYfull/12)); set('perYear',fmt(m.perYear));
+  set('penFinal',fmt(m.penM)); set('pct',Math.round(m.penM/(m.afc/12)*100)+'%');
+  set('redNote', m.red>0 ? 'That includes '+art(Math.round(m.red*100))+' '+Math.round(m.red*100)+'% early retirement reduction, because you would leave '+(25-m.yrs)+' year'+((25-m.yrs)>1?'s':'')+' short of 25 before age 60.' : 'No early retirement reduction applies at these numbers.');
+  set('hdsShare', Math.round(m.hds/(m.penM+m.hds)*100)+'%');
+  set('age', m.age); set('hdsYears', m.hdsYears+' years'); set('hdsTotal', fmt(m.hdsYears*m.hds*12));
+  var diff=m.ss-m.hds;
+  set('handoff', 'Before 67, VRS pays you <strong>'+fmt(m.penM+m.hds)+'</strong> a month. After 67, your pension plus Social Security is <strong>'+fmt(m.penM+m.ss)+'</strong>. '+(diff>=0?'Social Security more than replaces the supplement, by about <strong>'+fmt(diff)+'</strong> a month.':'Social Security falls about <strong>'+fmt(-diff)+'</strong> a month short of the supplement. Your 457(b) and 401(a) can fill that gap, and you have years to plan it.'), true);
+  set('ssM', fmt(m.ss));
+  set('cbizText', 'The County Supplemental Plan adds <strong>'+fmt(m.cbiz)+'</strong> a month from '+m.age+' to '+m.cbizEnd+(m.cbiz<940?', a reduced amount because you would leave before 25 years and age 55.':'.'), true);
+  var at=function(a){return m.penM+(a<67?m.hds:0)+(a<m.cbizEnd?m.cbiz:0)+(a>=67?m.ss:0);};
+  var parts=['At '+m.age+': <strong>'+fmt(at(m.age))+'</strong> a month.'];
+  if(m.cbizEnd>67) parts.push('At 67: <strong>'+fmt(at(67))+'</strong>.','At '+m.cbizEnd+': <strong>'+fmt(at(m.cbizEnd))+'</strong>.');
+  else parts.push('At 67: <strong>'+fmt(at(67))+'</strong>.');
+  set('summary', parts.join(' ')+' Each change is scheduled, so you can plan for it years ahead.', true);
+  // PLOP
+  var basic=m.penYfull/12, k=m.plopMax>0?m.plopMax:2, lump=basic*12*k;
+  set('penBasic', fmt(basic));
+  set('plopTake', (m.plopMax>0?'At your numbers you could take up to a '+m.plopMax+'-year PLOP: ':'Here is a 2-year PLOP as an example: ')+'<strong>'+fmt(lump)+'</strong>, '+(k*12)+' future checks paid at once.', true);
+  set('plopCash', 'On a '+fmt(lump)+' PLOP, that is <strong>'+fmt(lump*0.24)+'</strong> withheld, leaving <strong>'+fmt(lump*0.76)+'</strong> in cash.', true);
+  set('plopElig', m.unredAge===null ? 'At these numbers you would not reach an unreduced pension before you retire, so a PLOP is not available.' : (m.plopMax>0 ? 'You would qualify for an unreduced pension at '+m.unredAge+' and retire at '+m.age+', so you could take up to a <strong>'+m.plopMax+'-year</strong> PLOP.' : 'You would qualify for an unreduced pension at '+m.unredAge+', the same year you retire. Working one more year, to '+(m.unredAge+1)+', would open a 1-year PLOP.'), true);
+  // CBIZ
+  set('opt1', 'Example at your AFC: hired at 22, leaving at 47 with 25 years, Option 1 pays about <strong>'+fmt(m.afc*0.015*25/12)+'</strong> a month until 50. Leave at 50 or older and it is not available.', true);
+  set('opt2', 'Option 2 pays <strong>'+fmt(m.cbiz)+'</strong> a month for 15 years: 180 checks, about <strong>'+fmt(m.cbiz*180)+'</strong> in all'+(m.cbiz<940?'. That is a reduced amount, because you would leave before 25 years and age 55.':'.'), true);
+  var l3=(m.cbiz>=940?104291:104291*m.cbiz/940);
+  set('opt3', 'Option 3 pays it all at once: about <strong>'+fmt(l3)+'</strong>. Spread over the same 15 years, that is about <strong>'+fmt(l3/180)+'</strong> a month, against '+fmt(m.cbiz)+' from Option 2.', true);
+  set('opt3note', m.cbiz>=940?'The $104,291 comes from one real member\'s CBIZ estimate. Yours will differ.':'Lump sum scaled from one real member\'s CBIZ estimate. Get your real figure from CBIZ.');
+  // Savings
+  var sy=Math.max(1,67-m.age);
+  set('savPay', 'Your <strong>'+fmt(m.bal)+'</strong> spread from '+m.age+' to 67 is about <strong>'+fmt(m.bal/(sy*12))+'</strong> a month. Spread over 30 years, about <strong>'+fmt(m.bal/360)+'</strong>.'+(m.ss<m.hds?' That can help fill the '+fmt(m.hds-m.ss)+' a month gap between the supplement and your Social Security estimate.':''), true);
+  var ex=(N.afc===EX.afc&&N.yrs===EX.yrs&&N.age===EX.age&&N.ss===EX.ss&&N.bal===EX.bal);
+  $('who-short').textContent = ex ? 'Showing our example member. Tap to enter yours.' : 'Showing your numbers: '+fmt(N.afc)+', '+N.yrs+' years, retiring at '+N.age+'.';
+}
+
+/* ---------- step engine ---------- */
+function apply(svg){
+  var st=svg.getAttribute('data-step');
+  [].forEach.call(svg.querySelectorAll('[data-show]'),function(e){ e.classList.toggle('hide', e.getAttribute('data-show').split(' ').indexOf(st)<0); });
+  [].forEach.call(svg.querySelectorAll('.gx,.gy'),function(e){
+    var grow=e.getAttribute('data-grow'); var parent=e.closest('[data-show]');
+    var on = grow ? grow.split(' ').indexOf(st)>=0 : (parent? parent.getAttribute('data-show').split(' ').indexOf(st)>=0 : true);
+    if(e.classList.contains('gx')) e.classList.toggle('flat-x',!on); else e.classList.toggle('flat-y',!on);
+  });
+  [].forEach.call(svg.querySelectorAll('[data-move]'),function(e){ var mv=e.getAttribute('data-move'); if(!mv)return; e.classList.toggle('moved', mv.split(' ').indexOf(st)>=0); });
+  [].forEach.call(svg.querySelectorAll('.draw'),function(e){ var d=e.getAttribute('data-draw')||''; e.classList.toggle('drawn', d.split(' ').indexOf(st)>=0); });
+}
+function render(){
+  var m=model(); drawVRS(m); drawHDS(m); drawPLOP(m); drawCBIZ(m); drawSAV(m); drawALL(m); bind(m);
+  ['g-vrs','g-hds','g-plop','g-cbiz','g-sav','g-all'].forEach(function(id){ var svg=$(id); requestAnimationFrame(function(){requestAnimationFrame(function(){apply(svg);});}); });
+}
+
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ var svg=$(e.target.parentNode.getAttribute('data-target')); svg.setAttribute('data-step',e.target.getAttribute('data-step')); apply(svg);} });},{rootMargin:'-45% 0px -45% 0px'});
+  [].forEach.call(document.querySelectorAll('.step'),function(s){io.observe(s);});
+}
+
+/* nav highlight */
+var links=[].slice.call(document.querySelectorAll('.nav a'));
+if('IntersectionObserver' in window){
+  var nio=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(l){l.classList.toggle('on', l.getAttribute('href')==='#'+e.target.id);}); } });},{rootMargin:'-30% 0px -60% 0px'});
+  ['numbers','ch-vrs','ch-hds','ch-plop','ch-cbiz','ch-sav','ch-all'].forEach(function(id){nio.observe($(id));});
+}
+
+/* inputs */
+var ins={afc:$('in-afc'),yrs:$('in-yrs'),age:$('in-age'),ss:$('in-ss'),bal:$('in-bal')};
+function syncInputs(){ for(var k in ins){ins[k].value=N[k];} $('o-afc').textContent=fmt(N.afc); $('o-yrs').textContent=N.yrs; $('o-age').textContent=N.age; $('o-ss').textContent=fmt(N.ss); $('o-bal').textContent=fmt(N.bal); }
+var timer;
+Object.keys(ins).forEach(function(k){ ins[k].addEventListener('input',function(){ N[k]=+ins[k].value; syncInputs(); clearTimeout(timer); timer=setTimeout(function(){ try{localStorage.setItem('l2598-numbers',JSON.stringify(N));}catch(e){} render(); },120); }); });
+$('reset').addEventListener('click',function(){ N=Object.assign({},EX); try{localStorage.removeItem('l2598-numbers');}catch(e){} syncInputs(); render(); });
+
+syncInputs(); render();
+})();
+</script>
+</body>
+</html>

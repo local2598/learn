@@ -359,6 +359,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
         <h3>What keeps paying</h3>
         <p>Only some pieces continue. The supplement stops whichever option you choose.</p>
         <p>CBIZ Option 2 pays your beneficiary the rest of the 180 payments, and your Empower accounts pass to the beneficiaries you named there.</p>
+        <p>Your CBIZ beneficiary is named on the plan's own form, not your VRS form. Still working and die in the line of duty? That beneficiary receives a <span class="big">$169,200</span> lump sum from the plan.</p>
       </div></section>
       <section class="step" data-step="4"><div class="card">
         <h3>What the Survivor Option costs</h3>
@@ -368,7 +369,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
       <section class="step" data-step="5"><div class="card">
         <h3>Hard to undo</h3>
         <p>You can change a Survivor Option only in limited cases, such as your survivor dying first or certain divorces, and only once in your lifetime. If you are married, your spouse signs your retirement application.</p>
-        <p>Sit down with your spouse, VRS and a planner before you sign. VRS offers one-on-one counseling and explains every payout option.</p>
+        <p>VRS offers one-on-one counseling and explains every payout option, if you want to talk it through before you sign.</p>
         <p class="fine"><a href="https://www.varetire.org/benefits-and-programs/benefits/benefit-payout-options/">VRS payout options</a></p>
       </div></section>
     </div>
@@ -1388,7 +1389,7 @@ function renderPlan(m){
   I.push([T,'Your VRS retirement begins','Confirm your first VRS and CBIZ payments arrive.']);
   I.push([addD(T,60),'CBIZ: delay deadline','If you want to delay your CBIZ payments, your notice is due by today.']);
   I.push([addD(T,120),'CBIZ: file by today','If your CBIZ application is not in yet, file it now. After one year it is too late.']);
-  I.push([addM(L,12),'CBIZ: one year after your last day','Interest on your CBIZ account stops. With no election by now, your lump sum is rolled to an IRA automatically.']);
+  I.push([addM(L,12),'CBIZ: one year after your last day','Interest on your CBIZ account stops. Claims to the plan must be made within one year of retirement.']);
   I.push([addM(L,60),'Presumption: heart, hypertension, respiratory','Last day to file, counting from your last shift. A diagnosis communicated to you earlier starts a 2-year clock that can close sooner.']);
   if(age+10<65) I.push([addM(L,120),'Presumption: listed cancers','Last day to file, counting from your last shift, unless a diagnosis communicated to you earlier closes it sooner.']);
   else I.push([new Date(y65,0,1),'Presumption: listed cancers','No cancer claim can be made at 65 or older, so your window closes at your 65th birthday, before the 10-year mark.','Around '+y65]);

@@ -115,6 +115,27 @@ button{font:inherit;font-weight:600;font-size:16px;border-radius:4px;padding:9px
 .foot ul{margin:0 0 14px;padding-left:20px}
 
 
+
+/* who to call */
+.call{max-width:720px;margin:0 auto;padding:0 18px 40px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.chip{font:inherit;font-size:15px;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--head);cursor:pointer;min-height:40px}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#14213D;font-weight:600}
+.contacts{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px;padding:0;list-style:none}
+@media (min-width:700px){.contacts{grid-template-columns:1fr 1fr}}
+.contact{background:var(--panel);border-left:6px solid var(--c-pen);border-radius:4px;padding:14px 16px;transition:opacity .35s ease,transform .35s ease}
+.contact.dim{display:none}
+.contact.pop{animation:pop .4s ease both}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.contact h3{margin:0 0 4px;font-family:'Barlow Condensed',Barlow,sans-serif;font-size:22px;text-transform:uppercase;color:var(--head)}
+.contact p{margin:0 0 10px;font-size:15px;line-height:1.45}
+.contact .acts{display:flex;flex-wrap:wrap;gap:8px}
+.contact .acts a{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border-radius:6px;font-weight:600;text-decoration:none;font-size:15px}
+.contact .acts a.tel{background:var(--c-pen);color:var(--on-dark)}
+.contact .acts a.web{border:1.5px solid var(--line);color:var(--head)}
+.contact.local{border-left-color:var(--gold)}
+@media (prefers-reduced-motion: reduce){.contact.pop{animation:none}}
+
 /* basis caption */
 .graphic{position:sticky}
 .basis{position:absolute;top:6px;left:10px;right:10px;margin:0;font-size:14px;line-height:1.3;z-index:3}
@@ -165,10 +186,12 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
     <li><a href="#ch-cbiz">CBIZ choice</a></li>
     <li><a href="#ch-sav">Your savings</a></li>
     <li><a href="#ch-all">How it fits</a></li>
+    <li><a href="#ch-health">Health and Medicare</a></li>
     <li><a href="#ch-prot">Protections</a></li>
     <li><a href="#ch-pres">Presumptive law</a></li>
     <li><a href="#ch-l90">Last 90 days</a></li>
     <li><a href="#ch-list">Checklist</a></li>
+    <li><a href="#ch-call">Who to call</a></li>
   </ul>
 </nav>
 
@@ -239,7 +262,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
         <input id="in-bal" type="range" min="0" max="800000" step="5000">
       </div>
       <div class="btnrow"><button type="button" id="reset">Back to the example</button></div>
-      <p class="who">Everything you enter stays on this device. Nothing is sent to the Local or anyone else. Your sick leave and retirement month are entered in Chapters 10 and 11. This explainer covers members with 20 or more years of hazardous duty service, born in 1960 or later.</p>
+      <p class="who">Everything you enter stays on this device. Nothing is sent to the Local or anyone else. Your sick leave and retirement month are entered in Chapters 11 and 12. This explainer covers members with 20 or more years of hazardous duty service, born in 1960 or later.</p>
     </div>
   </details>
 </section>
@@ -498,10 +521,55 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
   </div>
 </section>
 
+<!-- HEALTH -->
+<section class="chapter" id="ch-health">
+  <div class="ch-head">
+    <p class="num">Chapter 8</p>
+    <h2>Health coverage and Medicare</h2>
+    <p>What covers you between your last shift and 65, two credits toward your premiums, and the Medicare deadline that follows you for life.</p>
+  </div>
+  <div class="story">
+    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-health" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-health">
+      <section class="step" data-step="1"><div class="card">
+        <h3>Medicare starts at 65, not at retirement</h3>
+        <p data-v="hGap"></p>
+        <p>Your active-employee medical and dental end on the last day of the month you separate.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Ways members cover the gap</h3>
+        <p>With 15 or more years of County service, you can continue County group medical, dental and vision in retirement, until 65.</p>
+        <p>COBRA, through P&amp;A Group, generally runs up to 18 months. A spouse's employer plan or a marketplace plan are other routes.</p>
+        <p data-v="hRule"></p>
+        <p class="fine">Retiree premiums change every plan year. Ask County HR Benefits what you would pay.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Two credits toward premiums, for life</h3>
+        <p data-v="hCredit"></p>
+        <p>Both repay premiums you actually pay, including Medicare Part B and supplement plans, and together they never pay more than the premium. Both need 15 years of service and count up to 30.</p>
+        <p class="fine">County rate of $6.50 a year of service applies to retirements on or after July 1, 2024. Apply for the VRS credit with your retirement application; it is not automatic. Confirm both amounts with County HR Benefits.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>At 65: your Medicare window</h3>
+        <p>Your window opens 3 months before the month you turn 65 and closes 3 months after. Seven months in all.</p>
+        <p>County group medical for retirees ends at 65.</p>
+        <p>The standard Part B premium is <span class="big">$202.90</span> a month in 2026. Higher incomes pay more.</p>
+        <p class="fine">Medicare.gov and CMS, 2026 figures.</p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>Missing it costs for life</h3>
+        <p>Sign up for Part B late and the premium goes up 10% for every full 12 months you could have had it, for as long as you have Part B.</p>
+        <p>Coverage from a job you or your spouse still works can pause the clock. Retiree coverage and COBRA do not.</p>
+        <p class="fine">Part D drug coverage has its own late penalty. Details at medicare.gov.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
 <!-- PROTECTIONS -->
 <section class="chapter" id="ch-prot">
   <div class="ch-head">
-    <p class="num">Chapter 8</p>
+    <p class="num">Chapter 9</p>
     <h2>Protections with early deadlines</h2>
     <p>Two County benefits cost less, or may only be available, if you act years before you retire. Whether either one fits you is your decision.</p>
   </div>
@@ -539,7 +607,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
 <!-- PRESUMPTIVE -->
 <section class="chapter" id="ch-pres">
   <div class="ch-head">
-    <p class="num">Chapter 9</p>
+    <p class="num">Chapter 10</p>
     <h2>Presumptive law: the clock after you leave</h2>
     <p>Virginia presumes certain diseases in firefighters come from the job. That protection follows you into retirement if you file in time.</p>
   </div>
@@ -582,7 +650,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
 <!-- LAST 90 DAYS -->
 <section class="chapter" id="ch-l90">
   <div class="ch-head">
-    <p class="num">Chapter 10</p>
+    <p class="num">Chapter 11</p>
     <h2>Your last 90 days</h2>
     <p>Pay, leave and paperwork. None of it is hard, but each piece is easy to miss in your final weeks.</p>
     <div class="calc">
@@ -637,7 +705,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
 <!-- CHECKLIST -->
 <section class="chapter" id="ch-list">
   <div class="ch-head">
-    <p class="num">Chapter 11</p>
+    <p class="num">Chapter 12</p>
     <h2>Your checklist, with real dates</h2>
     <p>Enter the month your VRS retirement begins. Every deadline below moves with it.</p>
   </div>
@@ -655,20 +723,48 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
   </div>
 </section>
 
+<!-- WHO TO CALL -->
+<section class="chapter" id="ch-call">
+  <div class="ch-head">
+    <p class="num">Chapter 13</p>
+    <h2>Who to call</h2>
+    <p>Tap what you need help with. Every number below can be tapped to call.</p>
+  </div>
+  <div class="call">
+    <div class="chips" role="group" aria-label="Show contacts for">
+      <button type="button" class="chip" data-t="all" aria-pressed="true">Everything</button>
+      <button type="button" class="chip" data-t="pension" aria-pressed="false">My pension</button>
+      <button type="button" class="chip" data-t="supplement" aria-pressed="false">The supplement</button>
+      <button type="button" class="chip" data-t="cbiz" aria-pressed="false">CBIZ options</button>
+      <button type="button" class="chip" data-t="savings" aria-pressed="false">457(b) and 401(a)</button>
+      <button type="button" class="chip" data-t="survivor" aria-pressed="false">Beneficiaries</button>
+      <button type="button" class="chip" data-t="health" aria-pressed="false">Health coverage</button>
+      <button type="button" class="chip" data-t="life" aria-pressed="false">Life insurance</button>
+      <button type="button" class="chip" data-t="lastpay" aria-pressed="false">Final pay</button>
+      <button type="button" class="chip" data-t="ss" aria-pressed="false">Social Security and Medicare</button>
+      <button type="button" class="chip" data-t="injury" aria-pressed="false">Injury or illness</button>
+      <button type="button" class="chip" data-t="wrong" aria-pressed="false">Something looks wrong</button>
+    </div>
+    <ul class="contacts" id="contacts">
+    <li class="contact" data-topics="pension supplement survivor health injury"><h3>Virginia Retirement System</h3><p>Your pension, service record, the supplement, payout options and the PLOP, the VRS health insurance credit and the Line of Duty Act.</p><div class="acts"><a class="tel" href="tel:1-888-827-3847">Call 1-888-827-3847</a><a class="web" href="https://myvrs.varetire.org" target="_blank" rel="noopener">myvrs.varetire.org</a></div></li>
+    <li class="contact" data-topics="cbiz survivor"><h3>CBIZ</h3><p>The County Supplemental Plan: Option 1, 2 or 3, your application and your payments.</p><div class="acts"><a class="tel" href="tel:1-844-581-2871">Call 1-844-581-2871</a><a class="web" href="https://myretirement.cbiz.com" target="_blank" rel="noopener">myretirement.cbiz.com</a></div></li>
+    <li class="contact" data-topics="savings survivor"><h3>Empower</h3><p>Your 457(b), Roth 457(b) and 401(a): balances, beneficiaries and withdrawals.</p><div class="acts"><a class="tel" href="tel:1-800-701-8255">Call 1-800-701-8255</a><a class="web" href="https://participant.empower-retirement.com/participant/#/login" target="_blank" rel="noopener">Empower login</a></div></li>
+    <li class="contact" data-topics="health life lastpay"><h3>County HR Benefits</h3><p>Retiree health coverage and the County credit, supplemental life, long-term care, and your final pay and sick leave.</p><div class="acts"><a class="tel" href="tel:703-792-6640">Call (703) 792-6640</a><a class="web" href="mailto:HRBenefitsTeam@pwcgov.org">HRBenefitsTeam@pwcgov.org</a></div></li>
+    <li class="contact" data-topics="health"><h3>P&amp;A Group</h3><p>COBRA paperwork and payments after your County coverage ends.</p><div class="acts"><a class="tel" href="tel:1-800-688-2611">Call 1-800-688-2611</a></div></li>
+    <li class="contact" data-topics="ss"><h3>Social Security</h3><p>Your Social Security estimate and when to claim.</p><div class="acts"><a class="tel" href="tel:1-800-772-1213">Call 1-800-772-1213</a><a class="web" href="https://www.ssa.gov/myaccount" target="_blank" rel="noopener">ssa.gov/myaccount</a></div></li>
+    <li class="contact" data-topics="ss health"><h3>Medicare</h3><p>Your enrollment window at 65, Part B and drug coverage.</p><div class="acts"><a class="tel" href="tel:1-800-633-4227">Call 1-800-633-4227</a><a class="web" href="https://www.medicare.gov/basics/get-started-with-medicare" target="_blank" rel="noopener">medicare.gov</a></div></li>
+    <li class="contact" data-topics="savings cbiz"><h3>IAFF Financial Corporation</h3><p>Financial planning for IAFF members and retirees, if you want help with planning.</p><div class="acts"><a class="tel" href="tel:202-737-1125">Call (202) 737-1125</a><a class="web" href="https://iaff-fc.com/retirement/" target="_blank" rel="noopener">iaff-fc.com</a></div></li>
+    <li class="contact local" data-topics="wrong pension supplement cbiz savings survivor health life lastpay ss injury"><h3>IAFF Local 2598</h3><p>If something in your record looks wrong, or you are not getting clear answers, email the Executive Board. We will help you find the right person and follow up.</p><div class="acts"><a class="tel" href="mailto:eboard@Local2598.org">Email eboard@Local2598.org</a></div></li>
+    </ul>
+    <p class="fine">Numbers checked October 2026. If one has changed, tell us at eboard@Local2598.org.</p>
+  </div>
+</section>
+
 <footer class="foot">
   <h2>Where to get your real numbers</h2>
   <p class="fine">This explainer is education, not financial, tax or legal advice. Local 2598 does not recommend any option over another. For advice on your situation, talk with a licensed financial professional.</p>
-  <ul>
-    <li>VRS pension and supplement: <a href="https://myvrs.varetire.org">myVRS Benefit Estimator</a></li>
-    <li>457(b), Roth 457(b) and 401(a): <a href="https://participant.empower-retirement.com/participant/#/login">Empower</a> or 1-800-701-8255</li>
-    <li>CBIZ Supplemental Plan: <a href="https://myretirement.cbiz.com">myretirement.cbiz.com</a> or 1-844-581-2871</li>
-    <li>Payout options and the PLOP: <a href="https://www.varetire.org/benefits-and-programs/benefits/benefit-payout-options/">VRS payout options</a></li>
-    <li>Social Security: <a href="https://www.ssa.gov/myaccount">ssa.gov/myaccount</a></li>
-    <li>COBRA: P&amp;A Group, 1-800-688-2611</li>
-    <li>Line of Duty Act: VRS, 1-888-827-3847</li>
-    <li>Questions: eboard@Local2598.org</li>
-  </ul>
-  <p class="fine">General information from IAFF Local 2598, not financial, legal or tax advice. Your official benefits are set by VRS, the Prince William County Supplemental Pension Plan and your Empower plan documents. Supplement amount as of July 1, 2025. CBIZ Option 2 is $940 a month under the 2025 Restatement. Early retirement reduction shown as 0.5% per month short of 25 years between ages 50 and 60. Long-term care costs are 2024 national medians. Presumption deadlines from Va. Code &sect; 65.2-402 and &sect; 65.2-406. Published October 2026.</p>
+  <p>Every phone number and website is in <a href="#ch-call">Who to call</a>.</p>
+  <p class="fine">General information from IAFF Local 2598, not financial, legal or tax advice. Your official benefits are set by VRS, the Prince William County Supplemental Pension Plan and your Empower plan documents. Supplement amount as of July 1, 2025. CBIZ Option 2 is $940 a month under the 2025 Restatement. Early retirement reduction shown as 0.5% per month short of 25 years between ages 50 and 60. Long-term care costs are 2024 national medians. Presumption deadlines from Va. Code &sect; 65.2-402 and &sect; 65.2-406. Health insurance credits from the County credit brochure (July 2024) and VRS; Medicare figures from CMS for 2026. Published October 2026.</p>
 </footer>
 
 <script>
@@ -1311,6 +1407,111 @@ function renderPlan(m){
   box.innerHTML=html;
 }
 
+
+/* ---------- health coverage and Medicare ---------- */
+var PARTB=202.90;
+function hic(m){ var y=Math.min(m.yrs,30), ok=m.yrs>=15; return {ok:ok, county:ok?6.5*y:0, vrs:ok?Math.min(1.5*y,45):0}; }
+function drawHEALTH(m){
+  var s=$('g-health'); clear(s);
+  var lo=50, hi=72, X=function(a){return 60+(a-lo)*(560/(hi-lo));}, age=Math.min(m.age,65);
+  // shared axis
+  var ax=el('g',{'class':'layer','data-show':'1 2'});
+  ax.appendChild(el('line',{'x1':X(lo),'y1':330,'x2':X(hi),'y2':330,'stroke':'var(--line)','stroke-width':2}));
+  [50,55,60,65,70].forEach(function(a){ if(Math.abs(a-m.age)>1||a===65) ax.appendChild(el('text',{'class':'tick','x':X(a),'y':356,'text-anchor':'middle'},a)); });
+  if(m.age!==65&&m.age%5!==0) ax.appendChild(el('text',{'class':'tick','x':X(m.age),'y':356,'text-anchor':'middle','style':'font-weight:700'},m.age));
+  ax.appendChild(el('line',{'x1':X(65),'y1':60,'x2':X(65),'y2':330,'stroke':'var(--gold)','stroke-width':2,'stroke-dasharray':'5 4'}));
+  ax.appendChild(el('text',{'class':'lbl-b','x':X(65),'y':48,'text-anchor':'middle'},'65'));
+  s.appendChild(ax);
+  // step 1: the gap
+  var a=el('g',{'class':'layer','data-show':'1'}), gap=Math.max(0,65-m.age);
+  if(gap>0){
+    a.appendChild(el('rect',{'class':'gx flat-x','x':X(age),'y':140,'width':X(65)-X(age),'height':80,'rx':3,'fill':'var(--gold)'}));
+    a.appendChild(el('text',{'x':(X(age)+X(65))/2,'y':188,'text-anchor':'middle','style':'font-family:Barlow,sans-serif;font-weight:700;font-size:26px;fill:#14213D'},gap+' year'+(gap===1?'':'s')+' before Medicare'));
+  }
+  a.appendChild(el('rect',{'x':X(65),'y':140,'width':X(hi)-X(65),'height':80,'rx':3,'fill':'var(--c-ss)'}));
+  a.appendChild(el('text',{'x':(X(65)+X(hi))/2,'y':188,'text-anchor':'middle','style':'font-family:Barlow,sans-serif;font-weight:700;font-size:23px;fill:#14213D'},'Medicare'));
+  a.appendChild(el('text',{'class':'lbl','x':X(age),'y':124,'text-anchor':'start','style':'font-weight:600;font-size:21px'},'Retire at '+m.age));
+  s.appendChild(a);
+  // step 2: ways to cover it
+  var b=el('g',{'class':'layer','data-show':'2'}), rows=[
+    ['County retiree plan', m.yrs>=15 ? 65 : null, 'var(--c-pen)', m.yrs>=15 ? 'Until 65' : 'Needs 15 years'],
+    ['COBRA', Math.min(65,m.age+1.5), 'var(--c-cbiz)', 'Up to 18 months'],
+    ['Spouse\u2019s plan', 65, null, 'If available'],
+    ['Marketplace plan', 65, null, 'If available']];
+  rows.forEach(function(r,i){
+    var y=70+i*66;
+    b.appendChild(el('text',{'class':'lbl','x':X(age),'y':y,'style':'font-weight:600;font-size:21px'},r[0]));
+    if(r[1]===null){
+      b.appendChild(el('rect',{'x':X(age),'y':y+8,'width':X(65)-X(age),'height':32,'rx':3,'fill':'none','stroke':'var(--muted)','stroke-width':2,'stroke-dasharray':'6 5'}));
+      b.appendChild(el('text',{'class':'lbl-s','x':X(age)+12,'y':y+31,'style':'font-size:18px'},r[3]));
+    } else if(r[2]){
+      var w=X(r[1])-X(age), rc=el('rect',{'class':'gx flat-x','x':X(age),'y':y+8,'width':w,'height':32,'rx':3,'fill':r[2]}); rc.style.transitionDelay=(i*150)+'ms';
+      b.appendChild(rc);
+      b.appendChild(el('text',{'class':'lbl-s','x':X(age)+w+10,'y':y+31,'style':'font-size:18px'},r[3]));
+    } else {
+      b.appendChild(el('rect',{'x':X(age),'y':y+8,'width':X(65)-X(age),'height':32,'rx':3,'fill':'none','stroke':'var(--muted)','stroke-width':2,'stroke-dasharray':'6 5'}));
+      b.appendChild(el('text',{'class':'lbl-s','x':X(age)+12,'y':y+31,'style':'font-size:18px'},r[3]));
+    }
+  });
+  s.appendChild(b);
+  // step 3: credits
+  var c=el('g',{'class':'layer','data-show':'3'}), h=hic(m), base=300, k=1.1;
+  if(h.ok){
+    var hc=h.county*k, hv=h.vrs*k, tot=h.county+h.vrs, bx=230;
+    c.appendChild(el('rect',{'class':'gy flat-y','x':bx,'y':base-hc,'width':180,'height':hc,'rx':3,'fill':'var(--c-pen)'}));
+    var rv=el('rect',{'class':'gy flat-y','x':bx,'y':base-hc-hv-3,'width':180,'height':hv,'rx':3,'fill':'var(--gold)'}); rv.style.transitionDelay='300ms'; c.appendChild(rv);
+    c.appendChild(el('text',{'x':bx+90,'y':base-hc/2+8,'text-anchor':'middle','style':'font-family:Barlow,sans-serif;font-weight:700;font-size:22px;fill:var(--on-dark)'},fmt2(h.county)));
+    if(hv>=26) c.appendChild(el('text',{'x':bx+90,'y':base-hc-hv/2+5,'text-anchor':'middle','style':'font-family:Barlow,sans-serif;font-weight:700;font-size:19px;fill:#14213D'},fmt2(h.vrs)));
+    c.appendChild(el('text',{'class':'lbl','x':bx+200,'y':base-hc/2+6,'style':'font-weight:600'},'County credit'));
+    c.appendChild(el('text',{'class':'lbl','x':bx+200,'y':base-hc-hv/2+6,'style':'font-weight:600'},'VRS credit'));
+    c.appendChild(el('text',{'class':'lbl-xl','x':bx+90,'y':base-hc-hv-22,'text-anchor':'middle'},fmt2(tot)));
+    c.appendChild(el('line',{'x1':140,'y1':base,'x2':500,'y2':base,'stroke':'var(--line)','stroke-width':2}));
+    c.appendChild(el('text',{'class':'lbl-s','x':bx+90,'y':base+30,'text-anchor':'middle'},'a month, for life, toward premiums'));
+  } else {
+    c.appendChild(el('text',{'class':'lbl-xl','x':320,'y':170,'text-anchor':'middle'},'$0'));
+    c.appendChild(el('text',{'class':'lbl','x':320,'y':212,'text-anchor':'middle'},'Both credits start at 15 years of service'));
+  }
+  s.appendChild(c);
+  // step 4: the 7-month window
+  var d=el('g',{'class':'layer','data-show':'4'}), labs=['-3','-2','-1','65','+1','+2','+3'];
+  d.appendChild(el('text',{'class':'lbl','x':320,'y':78,'text-anchor':'middle','style':'font-weight:600;font-size:21px'},'Months around the month you turn 65'));
+  labs.forEach(function(t,i){
+    var x=54+i*78, mid=i===3, r=el('rect',{'class':'gy flat-y','x':x,'y':110,'width':66,'height':110,'rx':4,'fill':mid?'var(--gold)':'var(--c-ss)'}); r.style.transitionDelay=(i*90)+'ms';
+    d.appendChild(r);
+    d.appendChild(el('text',{'x':x+33,'y':176,'text-anchor':'middle','style':'font-family:Barlow,sans-serif;font-weight:700;font-size:'+(mid?30:25)+'px;fill:#14213D'},t));
+  });
+  d.appendChild(el('text',{'class':'lbl-b','x':320,'y':270,'text-anchor':'middle'},'7 months to enroll'));
+  d.appendChild(el('text',{'class':'lbl','x':320,'y':306,'text-anchor':'middle'},'Part B: $202.90 a month in 2026'));
+  s.appendChild(d);
+  // step 5: penalty
+  var e=el('g',{'class':'layer','data-show':'5'}), pb=310, sc=0.85;
+  [0,1,2,3].forEach(function(n,i){
+    var v=PARTB*(1+0.1*n), hh=v*sc, x=90+i*130, r=el('rect',{'class':'gy flat-y','x':x,'y':pb-hh,'width':90,'height':hh,'rx':3,'fill':i?'var(--cut)':'var(--c-pen)'}); r.style.transitionDelay=(i*180)+'ms';
+    e.appendChild(r);
+    e.appendChild(el('text',{'class':'lbl-b','x':x+45,'y':pb-hh-12,'text-anchor':'middle','style':'font-size:22px'},fmt2(v)));
+    e.appendChild(el('text',{'class':'lbl-s','x':x+45,'y':pb+26,'text-anchor':'middle'},i?(n+' yr'+(n>1?'s':'')+' late'):'On time'));
+  });
+  e.appendChild(el('line',{'x1':70,'y1':pb,'x2':590,'y2':pb,'stroke':'var(--line)','stroke-width':2}));
+  e.appendChild(el('text',{'class':'lbl-s','x':320,'y':364,'text-anchor':'middle'},'Monthly Part B at 2026 rates, for as long as you have it'));
+  s.appendChild(e);
+}
+function fmt2(v){ return '$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+
+
+/* ---------- who to call ---------- */
+[].forEach.call(document.querySelectorAll('.chip'),function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-t');
+    [].forEach.call(document.querySelectorAll('.chip'),function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    var n=0;
+    [].forEach.call(document.querySelectorAll('#contacts .contact'),function(c){
+      var on=t==='all'||c.getAttribute('data-topics').split(' ').indexOf(t)>=0;
+      c.classList.toggle('dim',!on); c.classList.remove('pop');
+      if(on){ void c.offsetWidth; c.style.animationDelay=(n*60)+'ms'; c.classList.add('pop'); n++; }
+    });
+  });
+});
+
 /* ---------- text bindings ---------- */
 function bind(m){
   var set=function(k,v,html){[].forEach.call(document.querySelectorAll('[data-v="'+k+'"]'),function(e){ if(html)e.innerHTML=v; else e.textContent=v; });};
@@ -1360,6 +1561,11 @@ function bind(m){
   set('thrText', 'On your '+N.sched+'-hour schedule, the first <strong>'+k.thr+'</strong> hours are not paid. That leaves <strong>'+k.rest.toLocaleString('en-US')+'</strong> hours.', true);
   set('sickPaid', k.rest>0 ? 'You are paid for 25% of the '+k.rest.toLocaleString('en-US')+' hours left: <span class="big">'+Math.round(k.paid).toLocaleString('en-US')+' hours</span>.' : 'With '+N.sick.toLocaleString('en-US')+' hours, nothing is left after the first '+k.thr+', so no sick leave is paid out.', true);
   set('sickVal', k.rest>0 ? 'At your AFC, '+Math.round(k.paid).toLocaleString('en-US')+' hours is worth about <span class="big">'+fmt(k.val)+'</span> before taxes.' : 'No sick leave payout at these numbers.', true);
+
+  var gp=Math.max(0,65-m.age), hh=hic(m);
+  set('hGap', gp>0 ? 'Retiring at '+m.age+', that is <span class="big">'+gp+' year'+(gp===1?'':'s')+'</span> of health coverage to plan for before Medicare.' : 'Retiring at '+m.age+', Medicare is already available to you.', true);
+  set('hRule', m.yrs>=15 ? 'With '+m.yrs+' years, you meet the 15-year rule.' : 'With '+m.yrs+' years, you would not yet meet the 15-year rule.');
+  set('hCredit', hh.ok ? 'With '+m.yrs+' years, the County credit is '+fmt2(hh.county)+' a month and the VRS credit is '+fmt2(hh.vrs)+'. Together, up to <span class="big">'+fmt2(hh.county+hh.vrs)+'</span> a month for life'+((hh.county+hh.vrs)>225?', more than the standard Part B premium in 2026.':(hh.county+hh.vrs)>=180?', close to the standard Part B premium in 2026.':'.') : 'With '+m.yrs+' years, neither credit applies yet. Both start at 15 years of service.', true);
   renderPlan(m);
   var ex=(N.afc===EX.afc&&N.yrs===EX.yrs&&N.age===EX.age&&N.ss===EX.ss&&N.bal===EX.bal);
   set('basis', (ex?'Example member: ':'Your numbers: ')+fmt(N.afc)+' AFC, '+N.yrs+' years, retiring at '+N.age+'. '+(ex?'Yours will differ. Tap to enter yours.':'Tap to change.'));
@@ -1379,8 +1585,8 @@ function apply(svg){
   [].forEach.call(svg.querySelectorAll('.draw'),function(e){ var d=e.getAttribute('data-draw')||''; e.classList.toggle('drawn', d.split(' ').indexOf(st)>=0); });
 }
 function render(){
-  var m=model(); drawSRC(m); drawVRS(m); drawHDS(m); drawSURV(m); drawPLOP(m); drawCBIZ(m); drawSAV(m); drawPROT(m); drawPRES(m); drawALL(m); drawL90(m); bind(m);
-  ['g-src','g-vrs','g-hds','g-surv','g-plop','g-cbiz','g-sav','g-prot','g-pres','g-all','g-l90'].forEach(function(id){ var svg=$(id); requestAnimationFrame(function(){requestAnimationFrame(function(){apply(svg);});}); });
+  var m=model(); drawSRC(m); drawVRS(m); drawHDS(m); drawSURV(m); drawPLOP(m); drawCBIZ(m); drawSAV(m); drawPROT(m); drawPRES(m); drawALL(m); drawHEALTH(m); drawL90(m); bind(m);
+  ['g-src','g-vrs','g-hds','g-surv','g-plop','g-cbiz','g-sav','g-prot','g-pres','g-all','g-health','g-l90'].forEach(function(id){ var svg=$(id); requestAnimationFrame(function(){requestAnimationFrame(function(){apply(svg);});}); });
 }
 
 /* steps follow scroll position in both directions, at any scroll speed */
@@ -1402,7 +1608,7 @@ window.addEventListener('resize',syncSteps);
 var links=[].slice.call(document.querySelectorAll('.nav a'));
 if('IntersectionObserver' in window){
   var nio=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(l){l.classList.toggle('on', l.getAttribute('href')==='#'+e.target.id);}); } });},{rootMargin:'-30% 0px -60% 0px'});
-  ['ch-src','numbers','ch-vrs','ch-hds','ch-surv','ch-plop','ch-cbiz','ch-sav','ch-prot','ch-pres','ch-all','ch-l90','ch-list'].forEach(function(id){nio.observe($(id));});
+  ['ch-src','numbers','ch-vrs','ch-hds','ch-surv','ch-plop','ch-cbiz','ch-sav','ch-prot','ch-pres','ch-all','ch-health','ch-l90','ch-list','ch-call'].forEach(function(id){nio.observe($(id));});
 }
 
 /* inputs */

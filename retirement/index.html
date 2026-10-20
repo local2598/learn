@@ -181,10 +181,10 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
     <li><a href="#numbers">Your numbers</a></li>
     <li><a href="#ch-vrs">VRS pension</a></li>
     <li><a href="#ch-hds">The supplement</a></li>
-    <li><a href="#ch-surv">Survivors</a></li>
-    <li><a href="#ch-plop">The PLOP</a></li>
     <li><a href="#ch-cbiz">CBIZ choice</a></li>
     <li><a href="#ch-sav">Your savings</a></li>
+    <li><a href="#ch-plop">The PLOP</a></li>
+    <li><a href="#ch-surv">Survivors</a></li>
     <li><a href="#ch-all">How it fits</a></li>
     <li><a href="#ch-health">Health and Medicare</a></li>
     <li><a href="#ch-prot">Protections</a></li>
@@ -270,7 +270,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
 <!-- CHAPTER 1: VRS -->
 <section class="chapter" id="ch-vrs">
   <div class="ch-head">
-    <p class="num">Chapter 1</p>
+    <p class="num">Chapter 1 &middot; Source 1: VRS</p>
     <h2>How your VRS pension is figured</h2>
   </div>
   <div class="story">
@@ -305,7 +305,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
 <!-- CHAPTER 2: HDS -->
 <section class="chapter" id="ch-hds">
   <div class="ch-head">
-    <p class="num">Chapter 2</p>
+    <p class="num">Chapter 2 &middot; Source 1: also VRS</p>
     <h2>The Hazardous Duty Supplement</h2>
   </div>
   <div class="story">
@@ -336,10 +336,123 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
 </section>
 
 
+<!-- CHAPTER 5: CBIZ -->
+<section class="chapter" id="ch-cbiz">
+  <div class="ch-head">
+    <p class="num">Chapter 3 &middot; Source 2: CBIZ</p>
+    <h2>Your CBIZ choice</h2>
+  </div>
+  <div class="story">
+    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-cbiz" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-cbiz">
+      <section class="step" data-step="1"><div class="card">
+        <h3>One choice, made once</h3>
+        <p>When you retire from the County Supplemental Pension Plan, you pick one option, and you cannot change it later. Which options you have depends on your age when you leave.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Option 1: a bridge to 50</h3>
+        <p>Only for members who reach 25 years before they turn 50, which usually means hired at 24 or younger. It pays monthly until your VRS pension can begin at 50, then stops.</p>
+        <p data-v="opt1"></p>
+        <p class="fine">The plan also has a second formula and a supplement. The base benefit may get yearly increases; the supplement never does. CBIZ will show which applies to you.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Option 2: 180 checks that rise each August</h3>
+        <p data-v="opt2"></p>
+        <p>After a year of payments, Option 2 gets a cost-of-living increase each August, tied to inflation with limits based on your hire date. CBIZ's real example: members who started at $640 a month in 2017 and 2018 now receive $799.33, 25% more.</p>
+        <p>If you die before all 180 are paid, your beneficiary receives the rest.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Option 3: one lump sum</h3>
+        <p data-v="opt3"></p>
+        <p class="fine" data-v="opt3note"></p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>When the lump sum can make sense</h3>
+        <p>To pay the same amounts as Option 2 with 2% yearly increases, the lump sum would have to earn about 9% a year, every year, for 15 years. But you might use it to pay off a mortgage, clear credit card debt or cover a child's tuition, and the interest you stop paying can tip the math.</p>
+        <p>That is a conversation for a financial planner. The IAFF Financial Corporation is a good place to start.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 6: SAVINGS -->
+<section class="chapter" id="ch-sav">
+  <div class="ch-head">
+    <p class="num">Chapter 4 &middot; Source 3: Empower</p>
+    <h2>Your 457(b), Roth 457(b) and 401(a)</h2>
+  </div>
+  <div class="story">
+    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-sav" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-sav">
+      <section class="step" data-step="1"><div class="card">
+        <h3>Investment accounts, not a guaranteed check</h3>
+        <p>Your pensions pay a set amount every month. These do not. They are investment accounts that you own: what you put in, plus the County's match in the 401(a), and whatever it earns.</p>
+        <p>When you retire, you decide what to do with the money. How fast you draw it down decides how long it lasts.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Tax now or tax later</h3>
+        <p>The 457(b) gives you a tax break today, and you pay tax when you withdraw. The Roth 457(b) is taxed today, and comes out tax-free later.</p>
+        <p>Roth tends to come out ahead when your tax rate now is lower than it will be in retirement. Which fits you depends on your own situation.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>When you can reach it</h3>
+        <p>Your 457(b) is open at any age once you leave the County, with no 10% penalty. Your 401(a) opens without the penalty if you leave in or after the year you turn 50, or with 25 years. Roth earnings come out tax-free at 59½ once the account is 5 years old.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Two pockets</h3>
+        <p>That is why many members use both: 457(b) money to live on from the day you leave until 59½, and Roth money that comes out tax-free after. It matters most if you retire young.</p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>Your balance as a paycheck</h3>
+        <p data-v="savPay"></p>
+        <p class="fine">Simple division, before growth or taxes. Move these accounts into an IRA and you lose the early-withdrawal protection: before 59½, IRA withdrawals generally face the 10% penalty.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
+
+<!-- CHAPTER 4: PLOP -->
+<section class="chapter" id="ch-plop">
+  <div class="ch-head">
+    <p class="num">Chapter 5 &middot; Decision at retirement</p>
+    <h2>The PLOP</h2>
+  </div>
+  <div class="story">
+    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-plop" viewBox="0 0 640 380" data-step="1"></svg></div>
+    <div class="steps" data-target="g-plop">
+      <section class="step" data-step="1"><div class="card">
+        <h3>Your future checks</h3>
+        <p>The Partial Lump-Sum Option Payment lets you take 1, 2 or 3 years of your pension up front. Each square here is one future monthly check of <span class="big" data-v="penBasic"></span>.</p>
+      </div></section>
+      <section class="step" data-step="2"><div class="card">
+        <h3>Pulled forward into one payment</h3>
+        <p data-v="plopTake"></p>
+        <p>It is not extra money. It is your own future checks, paid early. You choose it on your VRS retirement application; it cannot be taken while you are still working.</p>
+      </div></section>
+      <section class="step" data-step="3"><div class="card">
+        <h3>Every check after is smaller</h3>
+        <p>VRS first figures your full pension. The year you worked to qualify counts toward your service and your AFC like any other year. Then, to pay for the PLOP, VRS lowers your monthly pension permanently. Future cost-of-living increases are figured on the smaller check.</p>
+        <p class="fine">VRS calculates the exact reduction. See it in the myVRS Benefit Estimator before you choose.</p>
+      </div></section>
+      <section class="step" data-step="4"><div class="card">
+        <h3>Taxes come off the top</h3>
+        <p>Taken in cash, VRS withholds 20% for federal tax and 4% for Virginia before you see a dollar. Rolling it into an IRA or a plan that accepts rollovers avoids the up-front tax.</p>
+        <p data-v="plopCash"></p>
+      </div></section>
+      <section class="step" data-step="5"><div class="card">
+        <h3>Do you qualify?</h3>
+        <p data-v="plopElig"></p>
+        <p class="fine">You must work at least one year past the date you first qualify for an unreduced pension: 50 with 25 years, or 60 with 5. Purchased service does not count toward that year.</p>
+      </div></section>
+    </div>
+  </div>
+</section>
+
 <!-- SURVIVORS -->
 <section class="chapter" id="ch-surv">
   <div class="ch-head">
-    <p class="num">Chapter 3</p>
+    <p class="num">Chapter 6 &middot; Decision at retirement</p>
     <h2>Who keeps getting paid if you die first</h2>
   </div>
   <div class="story">
@@ -376,117 +489,6 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
   </div>
 </section>
 
-<!-- CHAPTER 4: PLOP -->
-<section class="chapter" id="ch-plop">
-  <div class="ch-head">
-    <p class="num">Chapter 4</p>
-    <h2>The PLOP</h2>
-  </div>
-  <div class="story">
-    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-plop" viewBox="0 0 640 380" data-step="1"></svg></div>
-    <div class="steps" data-target="g-plop">
-      <section class="step" data-step="1"><div class="card">
-        <h3>Your future checks</h3>
-        <p>The Partial Lump-Sum Option Payment lets you take 1, 2 or 3 years of your pension up front. Each square here is one future monthly check of <span class="big" data-v="penBasic"></span>.</p>
-      </div></section>
-      <section class="step" data-step="2"><div class="card">
-        <h3>Pulled forward into one payment</h3>
-        <p data-v="plopTake"></p>
-        <p>It is not extra money. It is your own future checks, paid early.</p>
-      </div></section>
-      <section class="step" data-step="3"><div class="card">
-        <h3>Every check after is smaller</h3>
-        <p>To pay for it, VRS lowers your monthly pension permanently. Future cost-of-living increases are figured on the smaller check.</p>
-        <p class="fine">VRS calculates the exact reduction. See it in the myVRS Benefit Estimator before you choose.</p>
-      </div></section>
-      <section class="step" data-step="4"><div class="card">
-        <h3>Taxes come off the top</h3>
-        <p>Taken in cash, VRS withholds 20% for federal tax and 4% for Virginia before you see a dollar. Rolling it into an IRA or a plan that accepts rollovers avoids the up-front tax.</p>
-        <p data-v="plopCash"></p>
-      </div></section>
-      <section class="step" data-step="5"><div class="card">
-        <h3>Do you qualify?</h3>
-        <p data-v="plopElig"></p>
-        <p class="fine">You must work at least one year past the date you first qualify for an unreduced pension: 50 with 25 years, or 60 with 5. Purchased service does not count toward that year.</p>
-      </div></section>
-    </div>
-  </div>
-</section>
-
-<!-- CHAPTER 5: CBIZ -->
-<section class="chapter" id="ch-cbiz">
-  <div class="ch-head">
-    <p class="num">Chapter 5</p>
-    <h2>Your CBIZ choice</h2>
-  </div>
-  <div class="story">
-    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-cbiz" viewBox="0 0 640 380" data-step="1"></svg></div>
-    <div class="steps" data-target="g-cbiz">
-      <section class="step" data-step="1"><div class="card">
-        <h3>One choice, made once</h3>
-        <p>When you retire from the County Supplemental Pension Plan, you pick one option, and you cannot change it later. Which options you have depends on your age when you leave.</p>
-      </div></section>
-      <section class="step" data-step="2"><div class="card">
-        <h3>Option 1: a bridge to 50</h3>
-        <p>Only for members who reach 25 years before they turn 50, which usually means hired at 24 or younger. It pays monthly until your VRS pension can begin at 50, then stops.</p>
-        <p data-v="opt1"></p>
-      </div></section>
-      <section class="step" data-step="3"><div class="card">
-        <h3>Option 2: 180 checks</h3>
-        <p data-v="opt2"></p>
-        <p>If you die before all 180 are paid, your beneficiary receives the rest.</p>
-      </div></section>
-      <section class="step" data-step="4"><div class="card">
-        <h3>Option 3: one lump sum</h3>
-        <p data-v="opt3"></p>
-        <p class="fine" data-v="opt3note"></p>
-      </div></section>
-      <section class="step" data-step="5"><div class="card">
-        <h3>When the lump sum can make sense</h3>
-        <p>To catch up with Option 2, the lump sum would have to grow like a strong stock fund every year for 15 years. But you might use it to pay off a mortgage, clear credit card debt or cover a child's tuition, and the interest you stop paying can tip the math.</p>
-        <p>That is a conversation for a financial planner. The IAFF Financial Corporation is a good place to start.</p>
-      </div></section>
-    </div>
-  </div>
-</section>
-
-<!-- CHAPTER 6: SAVINGS -->
-<section class="chapter" id="ch-sav">
-  <div class="ch-head">
-    <p class="num">Chapter 6</p>
-    <h2>Your 457(b), Roth 457(b) and 401(a)</h2>
-  </div>
-  <div class="story">
-    <div class="graphic"><p class="basis"><a href="#numbers" data-v="basis"></a></p><svg aria-hidden="true" id="g-sav" viewBox="0 0 640 380" data-step="1"></svg></div>
-    <div class="steps" data-target="g-sav">
-      <section class="step" data-step="1"><div class="card">
-        <h3>Investment accounts, not a guaranteed check</h3>
-        <p>Your pensions pay a set amount every month. These do not. They are investment accounts that you own: what you put in, plus the County's match in the 401(a), and whatever it earns.</p>
-        <p>When you retire, you decide what to do with the money. How fast you draw it down decides how long it lasts.</p>
-      </div></section>
-      <section class="step" data-step="2"><div class="card">
-        <h3>Tax now or tax later</h3>
-        <p>The 457(b) gives you a tax break today, and you pay tax when you withdraw. The Roth 457(b) is taxed today, and comes out tax-free later.</p>
-        <p>Roth tends to come out ahead when your tax rate now is lower than it will be in retirement. Which fits you depends on your own situation.</p>
-      </div></section>
-      <section class="step" data-step="3"><div class="card">
-        <h3>When you can reach it</h3>
-        <p>Your 457(b) is open at any age once you leave the County, with no 10% penalty. Your 401(a) opens without the penalty if you leave in or after the year you turn 50, or with 25 years. Roth earnings come out tax-free at 59½ once the account is 5 years old.</p>
-      </div></section>
-      <section class="step" data-step="4"><div class="card">
-        <h3>Two pockets</h3>
-        <p>That is why many members use both: 457(b) money to live on from the day you leave until 59½, and Roth money that comes out tax-free after. It matters most if you retire young.</p>
-      </div></section>
-      <section class="step" data-step="5"><div class="card">
-        <h3>Your balance as a paycheck</h3>
-        <p data-v="savPay"></p>
-        <p class="fine">Simple division, before growth or taxes. Move these accounts into an IRA and you lose the early-withdrawal protection: before 59½, IRA withdrawals generally face the 10% penalty.</p>
-      </div></section>
-    </div>
-  </div>
-</section>
-
-
 <!-- HOW IT FITS -->
 <section class="chapter" id="ch-all">
   <div class="ch-head">
@@ -507,7 +509,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
       <section class="step" data-step="3"><div class="card">
         <h3>Add CBIZ Option 2</h3>
         <p data-v="cbizText"></p>
-        <p class="fine">Option 2 pays for 15 years. Chapter 5 compares it with the lump sum.</p>
+        <p class="fine">Option 2 pays for 15 years. Chapter 3 compares it with the lump sum.</p>
       </div></section>
       <section class="step" data-step="4"><div class="card">
         <h3>Social Security takes over</h3>
@@ -765,7 +767,7 @@ select,input[type=month]{font:inherit;font-size:17px;padding:8px 10px;border:2px
   <h2>Where to get your real numbers</h2>
   <p class="fine">This explainer is education, not financial, tax or legal advice. Local 2598 does not recommend any option over another. For advice on your situation, talk with a licensed financial professional.</p>
   <p>Every phone number and website is in <a href="#ch-call">Who to call</a>.</p>
-  <p class="fine">General information from IAFF Local 2598, not financial, legal or tax advice. Your official benefits are set by VRS, the Prince William County Supplemental Pension Plan and your Empower plan documents. Supplement amount as of July 1, 2025. CBIZ Option 2 is $940 a month under the 2025 Restatement. Early retirement reduction shown as 0.5% per month short of 25 years between ages 50 and 60. Long-term care costs are 2024 national medians. Presumption deadlines from Va. Code &sect; 65.2-402 and &sect; 65.2-406. Health insurance credits from the County credit brochure (July 2024) and VRS; Medicare figures from CMS for 2026. Published October 2026.</p>
+  <p class="fine">General information from IAFF Local 2598, not financial, legal or tax advice. Your official benefits are set by VRS, the Prince William County Supplemental Pension Plan and your Empower plan documents. Supplement amount as of July 1, 2025. CBIZ Option 2 starts at $940 a month under the 2025 Restatement and rises each August with inflation, within limits, as confirmed by CBIZ in October 2026; totals at 2% a year are illustrations. Early retirement reduction shown as 0.5% per month short of 25 years between ages 50 and 60. Long-term care costs are 2024 national medians. Presumption deadlines from Va. Code &sect; 65.2-402 and &sect; 65.2-406. Health insurance credits from the County credit brochure (July 2024) and VRS; Medicare figures from CMS for 2026. Published October 2026.</p>
 </footer>
 
 <script>
@@ -791,12 +793,14 @@ function model(){
   var cbiz=0;
   if(yrs>=25||age>=55){cbiz=940;} else {cbiz=940*0.5*(yrs/25);}
   var cbizEnd=age+15;
+  var colaWait=(cbiz<940 && age<55)?(55-age-1):0, cbizCola=0, cbizLast=cbiz;
+  for(var k=0;k<15;k++){ var e=Math.max(0,k-colaWait); cbizLast=cbiz*Math.pow(1.02,e); cbizCola+=12*cbizLast; }
   // PLOP eligibility
   var unredAge=null;
   if(yrs>=25){ unredAge=Math.max(50, age-(yrs-25)); } else if(age>=60){ unredAge=60; }
   var monthsPast = unredAge===null?0:Math.max(0,(age-unredAge)*12);
   var plopMax = Math.min(3, Math.floor(monthsPast/12));
-  return {unredAge:unredAge,monthsPast:monthsPast,plopMax:plopMax,bal:N.bal,afc:afc,yrs:yrs,age:age,ss:N.ss,penYfull:penYfull,red:red,penY:penY,penM:penM,hds:hds,hdsYears:hdsYears,cbiz:cbiz,cbizEnd:cbizEnd,perYear:afc*0.0185/12};
+  return {unredAge:unredAge,monthsPast:monthsPast,plopMax:plopMax,bal:N.bal,afc:afc,yrs:yrs,age:age,ss:N.ss,penYfull:penYfull,red:red,penY:penY,penM:penM,hds:hds,hdsYears:hdsYears,cbiz:cbiz,cbizEnd:cbizEnd,cbizCola:cbizCola,cbizLast:cbizLast,colaWait:colaWait,perYear:afc*0.0185/12};
 }
 
 /* ---------- helpers ---------- */
@@ -953,8 +957,8 @@ function drawALL(m){
   s.appendChild(ax);
   // legend chips
   var lg=el('g',{});
-  var names=[['VRS pension','1 2 3 4 5'],['Supplement','2 3 4 5'],['CBIZ Option 2','3 4 5'],['Social Security','4 5']];
-  names.forEach(function(nm,i){var gx=el('g',{'class':'layer','data-show':nm[1]}); gx.appendChild(el('rect',{'x':L+i*140,'y':6,'width':16,'height':16,'fill':colors[i],'rx':2})); gx.appendChild(el('text',{'class':'lbl-s','x':L+i*140+22,'y':20,'style':'font-size:15px'},nm[0])); lg.appendChild(gx);});
+  var names=[['VRS pension','1 2 3 4 5'],['VRS supplement','2 3 4 5'],['CBIZ Option 2','3 4 5'],['Social Security','4 5']];
+  var LX=[0,132,290,432]; names.forEach(function(nm,i){var gx=el('g',{'class':'layer','data-show':nm[1]}); gx.appendChild(el('rect',{'x':L+LX[i],'y':6,'width':16,'height':16,'fill':colors[i],'rx':2})); gx.appendChild(el('text',{'class':'lbl-s','x':L+LX[i]+22,'y':20,'style':'font-size:15px'},nm[0])); lg.appendChild(gx);});
   s.appendChild(lg);
   // totals markers (step 5)
   var mk=el('g',{'class':'layer','data-show':'5'});
@@ -1061,7 +1065,7 @@ function drawCBIZ(m){
   });
   var xo2=160+W1*o2t/mx1;
   o1.appendChild(el('line',{'x1':xo2,'y1':50,'x2':xo2,'y2':300,'stroke':'var(--c-cbiz)','stroke-width':3,'stroke-dasharray':'6 6'}));
-  o1.appendChild(el('text',{'class':'lbl-s','x':Math.min(xo2,560),'y':326,'text-anchor':'middle','style':'font-size:15px'},'Option 2 in all: '+fmt(o2t)));
+  o1.appendChild(el('text',{'class':'lbl-s','x':Math.min(xo2,560),'y':326,'text-anchor':'middle','style':'font-size:15px'},'Option 2 in all: at least '+fmt(o2t)));
   o1.appendChild(el('text',{'class':'lbl-s','x':20,'y':360,'style':'font-size:14px'},fmt(o1m)+' a month until 50. Main formula only; CBIZ shows your figure.'));
   s.appendChild(o1);
   // step 3: 180 checks
@@ -1077,19 +1081,20 @@ function drawCBIZ(m){
   s.appendChild(o2);
   // step 4-5: all three options, same unit
   var o3=el('g',{'class':'layer','data-show':'4 5'});
-  var lump=(m.cbiz>=940?104291:104291*m.cbiz/940), o2t=m.cbiz*180, W=330;
-  var mx=Math.max(o2t,lump,1);
-  var rows3=[['Option 1',0,'var(--gold)','Not available at '+m.age],['Option 2',o2t,'var(--c-cbiz)',fmt(m.cbiz)+' a month for 15 years'],['Option 3',lump,'var(--c-pen)','About '+fmt(lump/180)+' a month over 15 years']];
+  var lump=(m.cbiz>=940?104291:104291*m.cbiz/940), o2t=m.cbiz*180, o2i=Math.round(m.cbizCola/1000)*1000, W=330;
+  var mx=Math.max(o2i,lump,1);
+  var rows3=[['Option 1',0,'var(--gold)','Not available at '+m.age],['Option 2',o2i,'var(--c-cbiz)','At least '+fmt(o2t)+'; about '+fmt(o2i)+' at 2% a year'],['Option 3',lump,'var(--c-pen)','About '+fmt(lump/180)+' a month over 15 years, never changes']];
   o3.appendChild(el('text',{'class':'lbl-s','x':20,'y':40,'style':'font-size:15px'},'In all, retiring at '+m.age+' with '+m.yrs+' years'));
   rows3.forEach(function(r,i){
     var y=66+i*92, w=W*r[1]/mx;
     o3.appendChild(el('text',{'class':'lbl','x':20,'y':y+30,'style':'font-weight:600'},r[0]));
-    if(r[1]>0){ var b=el('rect',{'class':'gx flat-x','x':140,'y':y,'width':w,'height':44,'rx':4,'fill':r[2]}); b.style.transitionDelay=(i*200)+'ms'; o3.appendChild(b); }
+    if(r[1]>0){ var b=el('rect',{'class':'gx flat-x','x':140,'y':y,'width':w,'height':44,'rx':4,'fill':r[2]}); b.style.transitionDelay=(i*200)+'ms'; o3.appendChild(b);
+      if(i===1){ var fw=W*o2t/mx; o3.appendChild(el('rect',{'x':140+fw,'y':y,'width':Math.max(0,w-fw),'height':44,'fill':'var(--bg)','opacity':'0.45'})); o3.appendChild(el('line',{'x1':140+fw,'y1':y-4,'x2':140+fw,'y2':y+48,'stroke':'var(--head)','stroke-width':2,'stroke-dasharray':'4 3'})); } }
     else o3.appendChild(el('rect',{'x':140,'y':y,'width':W,'height':44,'rx':4,'fill':'none','stroke':'var(--line)','stroke-width':2,'stroke-dasharray':'6 5'}));
     o3.appendChild(el('text',{'class':'lbl-b','x':140+(r[1]>0?w:W)+10,'y':y+32,'style':'font-size:26px'},r[1]>0?fmt(r[1]):'$0'));
     o3.appendChild(el('text',{'class':'lbl-s','x':140,'y':y+66,'style':'font-size:14px'},r[3]));
   });
-  o3.appendChild(el('text',{'class':'lbl-s','x':20,'y':360,'style':'font-size:14px'},'Before any investment growth on the lump sum.'));
+  o3.appendChild(el('text',{'class':'lbl-s','x':20,'y':360,'style':'font-size:14px'},'Lighter part: 2% yearly increases, an illustration. No growth on the lump sum.'));
   s.appendChild(o3);
 }
 
@@ -1524,7 +1529,7 @@ function bind(m){
   var diff=m.ss-m.hds;
   set('handoff', 'Before 67, VRS pays you <strong>'+fmt(m.penM+m.hds)+'</strong> a month. After 67, your pension plus Social Security is <strong>'+fmt(m.penM+m.ss)+'</strong>. '+(diff>=0?'Social Security more than replaces the supplement, by about <strong>'+fmt(diff)+'</strong> a month.':'Social Security falls about <strong>'+fmt(-diff)+'</strong> a month short of the supplement. Your 457(b) and 401(a) can fill that gap, and you have years to plan it.'), true);
   set('ssM', fmt(m.ss));
-  set('cbizText', 'The County Supplemental Plan adds <strong>'+fmt(m.cbiz)+'</strong> a month from '+m.age+' to '+m.cbizEnd+(m.cbiz<940?', a reduced amount because you would leave before 25 years and age 55.':'.'), true);
+  set('cbizText', 'The County Supplemental Plan adds <strong>'+fmt(m.cbiz)+'</strong> a month to start, rising each August, from '+m.age+' to '+m.cbizEnd+(m.cbiz<940?', a reduced amount because you would leave before 25 years and age 55.':'.'), true);
   var at=function(a){return m.penM+(a<67?m.hds:0)+(a<m.cbizEnd?m.cbiz:0)+(a>=67?m.ss:0);};
   var parts=['At '+m.age+': <strong>'+fmt(at(m.age))+'</strong> a month.'];
   if(m.cbizEnd>67) parts.push('At 67: <strong>'+fmt(at(67))+'</strong>.','At '+m.cbizEnd+': <strong>'+fmt(at(m.cbizEnd))+'</strong>.');
@@ -1538,10 +1543,10 @@ function bind(m){
   set('plopElig', m.unredAge===null ? 'At these numbers you would not reach an unreduced pension before you retire, so a PLOP is not available.' : (m.plopMax>0 ? 'You would qualify for an unreduced pension at '+m.unredAge+' and retire at '+m.age+', so you could take up to a <strong>'+m.plopMax+'-year</strong> PLOP.' : 'You would qualify for an unreduced pension at '+m.unredAge+', the same year you retire. Working one more year, to '+(m.unredAge+1)+', would open a 1-year PLOP.'), true);
   // CBIZ
   var o1m=m.afc*0.015*25/12;
-  set('opt1', 'At your AFC, Option 1 pays about <strong>'+fmt(o1m)+'</strong> a month until 50. Leave at 47 with 25 years and that is <strong>'+fmt(o1m*36)+'</strong> in all. At 48, '+fmt(o1m*24)+'. At 49, '+fmt(o1m*12)+'. At 50 or older, nothing. Only leaving by about 47 rivals Option 2\'s '+fmt(m.cbiz*180)+'.', true);
-  set('opt2', 'Option 2 pays <strong>'+fmt(m.cbiz)+'</strong> a month for 15 years: 180 checks, about <strong>'+fmt(m.cbiz*180)+'</strong> in all'+(m.cbiz<940?'. That is a reduced amount, because you would leave before 25 years and age 55.':'.'), true);
+  set('opt1', 'At your AFC, Option 1 pays about <strong>'+fmt(o1m)+'</strong> a month until 50. Leave at 47 with 25 years and that is <strong>'+fmt(o1m*36)+'</strong> in all. At 48, '+fmt(o1m*24)+'. At 49, '+fmt(o1m*12)+'. At 50 or older, nothing.', true);
+  set('opt2', 'Option 2 starts at <strong>'+fmt(m.cbiz)+'</strong> a month for 15 years: 180 checks, at least <strong>'+fmt(m.cbiz*180)+'</strong> in all, and about <strong>'+fmt(Math.round(m.cbizCola/1000)*1000)+'</strong> if increases average 2% a year. That is an illustration, not a promise.'+(m.cbiz<940?' Yours is a reduced early retirement amount, because you would leave before 25 years and age 55, and increases do not start until 55.':''), true);
   var l3=(m.cbiz>=940?104291:104291*m.cbiz/940);
-  set('opt3', 'Option 3 pays it all at once: about <strong>'+fmt(l3)+'</strong>, or about '+fmt(l3/180)+' a month over the same 15 years. Side by side, retiring at '+m.age+': Option 1, <strong>$0</strong>. Option 2, <strong>'+fmt(m.cbiz*180)+'</strong>. Option 3, <strong>'+fmt(l3)+'</strong>.', true);
+  set('opt3', 'Option 3 pays it all at once: about <strong>'+fmt(l3)+'</strong>, or about '+fmt(l3/180)+' a month over the same 15 years. Side by side, retiring at '+m.age+': Option 1, <strong>$0</strong>. Option 2, at least <strong>'+fmt(m.cbiz*180)+'</strong>, about '+fmt(Math.round(m.cbizCola/1000)*1000)+' at 2% a year. Option 3, <strong>'+fmt(l3)+'</strong>, which never changes.', true);
   set('cost20', 'Leaving at 20 instead of 25 costs about <strong>'+fmt(m.afc*25*0.0185/12-m.afc*20*0.0185/12*0.7)+'</strong> a month, for life. That is about <strong>'+fmt((m.afc*25*0.0185/12-m.afc*20*0.0185/12*0.7)*12)+'</strong> a year: the 30% cut plus five fewer years.', true);
   set('opt3note', m.cbiz>=940?'The $104,291 comes from one real member\'s CBIZ estimate. Yours will differ.':'Lump sum scaled from one real member\'s CBIZ estimate. Get your real figure from CBIZ.');
   // Savings

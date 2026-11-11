@@ -3,61 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Learn | IAFF Local 2598</title>
+<title>Members Resource Center | IAFF Local 2598</title>
+<meta name="description" content="Guides, tools and trusted links for members of IAFF Local 2598, Prince William Professional Fire Fighters.">
 <link rel="icon" href="assets/seal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap">
 <style>
-:root{--navy:#14213D;--gold:#F2A900;--bg:#fff;--panel:#EEF1F6;--line:#C9D0DC;--text:#2D3748;--head:#14213D;--muted:#5A6577;
-  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme: dark){:root{--bg:#0E1729;--panel:#18233B;--line:#2E3C5C;--text:#D5DCE8;--head:#fff;--muted:#9AA6BB}}
+:root{--navy:#14213D;--gold:#F2A900;--bg:#fff;--panel:#EEF1F6;--line:#C9D0DC;--text:#2D3748;--head:#14213D;--muted:#5A6577;--band:#14213D;--bandtext:#E6EAF2;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--bg:#0E1729;--panel:#18233B;--line:#2E3C5C;--text:#D5DCE8;--head:#fff;--muted:#9AA6BB;--band:#1E2D4D;color-scheme:dark}}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow','Helvetica Neue',Arial,sans-serif;font-size:18px;line-height:1.55}
+.wrap{max-width:820px;margin:0 auto}
 .hero{background:linear-gradient(rgba(20,33,61,.82),rgba(20,33,61,.92)),url(assets/hero.jpg) center/cover;color:#fff;padding:36px 22px 44px}
-.wrap{max-width:900px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .brand img{width:56px;height:56px}
 .brand span{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:19px;color:var(--gold);line-height:1.2}
-h1{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(46px,10vw,80px);line-height:.95;margin:0 0 12px}
-.hero p{margin:0;max-width:40ch;color:#DCE2EC;font-size:19px}
-main{padding:34px 20px 20px}
-.grid{display:grid;gap:18px;grid-template-columns:1fr}
-@media (min-width:720px){.grid{grid-template-columns:1fr 1fr}}
-.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border-radius:6px;border-top:6px solid var(--gold);padding:20px 22px}
-.card h2{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:30px;line-height:1.05;color:var(--head);margin:0 0 8px}
-.card p{margin:0 0 12px}
+h1{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(44px,9vw,76px);line-height:.95;margin:0 0 12px}
+.hero p{margin:0;max-width:44ch;color:#DCE2EC;font-size:19px}
+main{padding:0 20px 20px}
+h2{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:32px;line-height:1.05;color:var(--head);margin:0 0 6px}
+section{margin-top:40px}
+.lede{margin:0 0 14px;color:var(--muted);font-size:16px}
+/* help band: the one loud element */
+.help{background:var(--band);color:var(--bandtext);border-left:8px solid var(--gold);border-radius:0 6px 6px 0;padding:20px 22px;margin-top:28px}
+.help h2{color:#fff;font-size:28px}
+.help p{margin:0 0 14px;font-size:16px}
+.lines{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.lines{grid-template-columns:1fr 1fr}}
+.line{background:rgba(255,255,255,.07);border-radius:4px;padding:12px 14px}
+.line b{display:block;color:#fff;font-size:18px}
+.line span{display:block;font-size:15px;margin-bottom:8px}
+.line a{display:inline-block;margin:0 8px 4px 0;padding:8px 14px;border-radius:4px;background:var(--gold);color:#14213D;font-weight:600;text-decoration:none;font-size:16px;min-height:40px}
+/* guides */
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border-radius:6px;border-top:6px solid var(--gold);padding:18px 20px}
+.card h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:27px;line-height:1.05;color:var(--head);margin:0 0 8px}
+.card p{margin:0 0 10px;font-size:17px}
 .card .go{font-weight:600;color:var(--head)}
 a.card:hover .go,a.card:focus-visible .go{text-decoration:underline}
+.soon{border-top-color:var(--line)} .soon .go{color:var(--muted)}
+/* directory */
+.links{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.links li{border-bottom:1px solid var(--line)}
+.links a{display:grid;grid-template-columns:1fr;gap:2px;padding:13px 2px;text-decoration:none;color:inherit}
+.links .name{font-weight:600;color:var(--head);font-size:18px}
+.links .what{font-size:16px}
+.links .where{font-size:14px;color:var(--muted)}
+.links a:hover .name,.links a:focus-visible .name{text-decoration:underline}
 a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.soon{border-top-color:var(--line)}
-.soon .go{color:var(--muted)}
-footer{max-width:900px;margin:0 auto;padding:24px 20px 48px;font-size:15px;color:var(--muted)}
+footer{max-width:820px;margin:0 auto;padding:30px 20px 48px;font-size:15px;color:var(--muted)}
 footer a{color:var(--head)}
+footer p{margin:0 0 8px}
 </style>
 </head>
 <body>
 <header class="hero"><div class="wrap">
   <div class="brand"><img src="assets/seal.png" alt="IAFF Local 2598 seal"><span>IAFF Local 2598<br>Prince William Professional Fire Fighters</span></div>
-  <h1>Learn</h1>
-  <p>Guides and explainers for Local 2598 members, built by your Local.</p>
+  <h1>Members Resource Center</h1>
+  <p>Guides built by your Local, and the outside sites members use most, checked and in one place.</p>
 </div></header>
 <main class="wrap">
-  <div class="grid">
-    <a class="card" href="retirement/">
-      <h2>Your retirement, explained</h2>
-      <p>How your VRS pension, the supplement, the PLOP, your CBIZ choice and your savings fit together, with your own numbers.</p>
-      <span class="go">Open the explainer &rarr;</span>
-    </a>
-    <div class="card soon">
-      <h2>Local 2598 101</h2>
-      <p>Who we are, how the Local works, and how to get involved.</p>
-      <span class="go">Coming soon</span>
+
+  <aside class="help" aria-labelledby="help-h">
+    <h2 id="help-h">Need to talk to someone now?</h2>
+    <p>Both are free, confidential and open 24 hours a day.</p>
+    <div class="lines">
+      <div class="line"><b>988 Suicide &amp; Crisis Lifeline</b><span>For anyone in crisis, or worried about someone.</span><a href="tel:988">Call 988</a><a href="sms:988">Text 988</a></div>
+      <div class="line"><b>Safe Call Now</b><span>Staffed by current and former first responders, for responders and their families.</span><a href="tel:+12064593020">Call 206-459-3020</a></div>
     </div>
-  </div>
+  </aside>
+
+  <section aria-labelledby="guides-h">
+    <h2 id="guides-h">Guides from your Local</h2>
+    <div class="grid">
+      <a class="card" href="retirement/">
+        <h3>Your retirement, explained</h3>
+        <p>How your VRS pension, the supplement, the PLOP, your CBIZ choice and your savings fit together, with your own numbers.</p>
+        <span class="go">Open the guide</span>
+      </a>
+      <div class="card soon">
+        <h3>Local 2598 101</h3>
+        <p>Who we are, how the Local works, and how to get involved.</p>
+        <span class="go">Coming soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="acct-h">
+    <h2 id="acct-h">Your retirement accounts</h2>
+    <p class="lede">Each is run by a different organization. Log in to all of them and check that your record is right.</p>
+    <ul class="links">
+      <li><a href="https://myvrs.varetire.org/login/" target="_blank" rel="noopener"><span class="name">myVRS</span><span class="what">Your VRS pension, service credit, beneficiaries and the Benefit Estimator.</span><span class="where">myvrs.varetire.org</span></a></li>
+      <li><a href="https://myretirement.cbiz.com" target="_blank" rel="noopener"><span class="name">CBIZ</span><span class="what">The County Supplemental Pension Plan, including your Option 1, 2 or 3 estimate.</span><span class="where">myretirement.cbiz.com</span></a></li>
+      <li><a href="https://www.empowermyretirement.com/" target="_blank" rel="noopener"><span class="name">Empower</span><span class="what">Your 457(b), Roth 457(b) and 401(a) accounts.</span><span class="where">empowermyretirement.com</span></a></li>
+      <li><a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener"><span class="name">my Social Security</span><span class="what">Your Social Security estimate and earnings record.</span><span class="where">ssa.gov</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="county-h">
+    <h2 id="county-h">Your contract and County benefits</h2>
+    <ul class="links">
+      <li><a href="https://www.pwcva.gov/department/board-county-supervisors/collective-bargaining" target="_blank" rel="noopener"><span class="name">Your contract (CBA)</span><span class="what">The current Local 2598 Collective Bargaining Agreement and past versions.</span><span class="where">pwcva.gov</span></a></li>
+      <li><a href="https://www.pwcva.gov/department/human-resources/benefit-programs" target="_blank" rel="noopener"><span class="name">County benefits</span><span class="what">Health plans and rates, life insurance, the 457 and 401(a), and leave.</span><span class="where">pwcva.gov</span></a></li>
+      <li><a href="https://www.pwcva.gov/department/human-resources/retiree-benefits" target="_blank" rel="noopener"><span class="name">County retiree benefits</span><span class="what">Keeping County coverage after you retire, and the health insurance credit.</span><span class="where">pwcva.gov</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="hurt-h">
+    <h2 id="hurt-h">If you are hurt or sick from the job</h2>
+    <ul class="links">
+      <li><a href="https://workcomp.virginia.gov/" target="_blank" rel="noopener"><span class="name">Virginia Workers' Compensation Commission</span><span class="what">How to file a claim, the forms, and the deadlines.</span><span class="where">workcomp.virginia.gov</span></a></li>
+      <li><a href="https://law.lis.virginia.gov/vacode/title65.2/chapter4/section65.2-402/" target="_blank" rel="noopener"><span class="name">The presumption law, Va. Code &sect; 65.2-402</span><span class="what">The statute that presumes certain cancers, heart disease, hypertension and respiratory disease in fire fighters come from the job.</span><span class="where">law.lis.virginia.gov</span></a></li>
+      <li><a href="https://www.iaffrecoverycenter.com/" target="_blank" rel="noopener"><span class="name">IAFF Center of Excellence</span><span class="what">Treatment for addiction, PTSD and related conditions, built for fire fighters.</span><span class="where">iaffrecoverycenter.com</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="plan-h">
+    <h2 id="plan-h">Medicare and planning help</h2>
+    <ul class="links">
+      <li><a href="https://www.medicare.gov/" target="_blank" rel="noopener"><span class="name">Medicare.gov</span><span class="what">When to enroll, Part B, and comparing plans.</span><span class="where">medicare.gov</span></a></li>
+      <li><a href="https://iaff-fc.com/" target="_blank" rel="noopener"><span class="name">IAFF Financial Corporation</span><span class="what">Financial planning for IAFF members and retirees, one option if you want help.</span><span class="where">iaff-fc.com</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="union-h">
+    <h2 id="union-h">Your union</h2>
+    <ul class="links">
+      <li><a href="https://www.local2598.org/" target="_blank" rel="noopener"><span class="name">IAFF Local 2598</span><span class="what">News, events and the Members Only login.</span><span class="where">local2598.org</span></a></li>
+      <li><a href="https://www.vpff.org/" target="_blank" rel="noopener"><span class="name">Virginia Professional Fire Fighters</span><span class="what">Our state association and its work in Richmond.</span><span class="where">vpff.org</span></a></li>
+      <li><a href="https://www.iaff.org/" target="_blank" rel="noopener"><span class="name">International Association of Fire Fighters</span><span class="what">Our international union.</span><span class="where">iaff.org</span></a></li>
+    </ul>
+  </section>
 </main>
 <footer>
-  <p>Questions: <a href="mailto:eboard@Local2598.org">eboard@Local2598.org</a> &middot; <a href="https://www.local2598.org">local2598.org</a></p>
+  <p>Links outside this site go to organizations the Local does not run, and open in a new tab. Links checked November 2026; if one stops working, tell us.</p>
   <p>General information from IAFF Local 2598, not financial, legal or tax advice.</p>
+  <p>Questions: <a href="mailto:eboard@Local2598.org">eboard@Local2598.org</a></p>
 </footer>
 </body>
 </html>
